@@ -1,3 +1,20 @@
 ﻿body {
 }
 
+.div-scroll-me {
+    width: auto;
+    height: auto
+}
+
+.div-section-container {
+    width: auto;
+    height: 100vh
+}
+
+.div-section-background-1 {
+    background-color: grey
+}
+
+.div-section-background-2 {
+    background-color: darkgrey
+}

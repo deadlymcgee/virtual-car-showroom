@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\styles.css" />
+    <Content Include="assets\scripts\jquery-smooth-scroll.js" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
