@@ -6,6 +6,15 @@
     height: auto
 }
 
+.element-absolute-centered {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .div-section-container {
     width: auto;
     height: 100vh
@@ -17,4 +26,34 @@
 
 .div-section-background-2 {
     background-color: darkgrey
+}
+
+
+.div-colour-picker-container {
+    top: 15%;
+    width: 75%;
+    height: 65%;
+    margin: auto;
+    background-color: blue;
+    position: relative
+}
+
+.div-colour-picker-image {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-color: white
+}
+
+.colour-picker-image {
+    
+    width: 656px;
+    height: 320px;
+    opacity: 0;
+    transition: all 0.3s ease
+
+}
+
+.colour-picker-image.active {
+    opacity: 1
 }
