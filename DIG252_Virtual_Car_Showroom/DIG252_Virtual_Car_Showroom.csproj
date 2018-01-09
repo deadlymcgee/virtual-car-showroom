@@ -66,11 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\images\colour_picker\lev18-gts-crystalblacksilica-front-656x320.png" />
-    <Content Include="assets\images\colour_picker\lev18-gts-icesilvermetallic-front-656x320.png" />
-    <Content Include="assets\images\colour_picker\lev18-gts-lapisbluepearl-front-656x320.png" />
-    <Content Include="assets\images\colour_picker\lev18-gts-purered-front-656x320.png" />
-    <Content Include="assets\images\colour_picker\levorg-20gt-s-storm-grey-metallic-front.png" />
+    <Content Include="assets\images\colour_picker\crystal-black-silica.png" />
+    <Content Include="assets\images\colour_picker\ice-silver-metallic.png" />
+    <Content Include="assets\images\colour_picker\lapis-blue-pearl.png" />
+    <Content Include="assets\images\colour_picker\pure-red.png" />
+    <Content Include="assets\images\colour_picker\storm-grey-metallic.png" />
     <Content Include="assets\plugins\flexslider_2.6.4\fonts\flexslider-icon.ttf" />
     <Content Include="assets\plugins\flexslider_2.6.4\fonts\flexslider-icon.woff" />
     <None Include="packages.config" />
