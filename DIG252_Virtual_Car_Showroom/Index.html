@@ -74,6 +74,11 @@
             <div id="section3"
                  class="div-section-container div-section-background-1">
                 <a id="colour" class="smooth"></a>
+                <div id="features-interactive"
+                     class="element-absolute-centered div-features-interactive-image">
+                    <img src="assets/images/features/features-dashboard.jpg"
+                         class="features-interactive-image"/>
+                </div>
             </div>
             <div id="section4"
                  class="div-section-container div-section-background-2">
@@ -114,6 +119,9 @@
                 $('.div-colour-picker-image img[data-image = ' + headphonesColor + ']').addClass('active');
                 $(this).addClass('active');
             });
+            $('.features-interactive-image').click(function() {
+                $(this).fadeTo(2000, 0.2);
+            })
         </script>
     </body>
 </html>

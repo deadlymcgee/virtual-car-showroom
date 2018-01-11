@@ -89,3 +89,16 @@
 .colour-picker-image.active {
     opacity: 1
 }
+
+
+
+.div-features-interactive-image {
+    height: 50%;
+    width: 50%;
+    background-color: black
+}
+
+.features-interactive-image {
+    width: 750px;
+    height: 380px;
+}
