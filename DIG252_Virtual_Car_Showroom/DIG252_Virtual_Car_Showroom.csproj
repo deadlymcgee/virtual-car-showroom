@@ -92,6 +92,7 @@
     <Content Include="assets\plugins\flexslider_2.6.4\jquery.mousewheel.js" />
     <Content Include="assets\scripts\jquery-smooth-scroll.js" />
     <Content Include="Index.html" />
+    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,14 @@
 ﻿body {
     margin: 0;
-    padding: 0
+    padding: 0;
+
 }
 
 .div-scroll-me {
+    position: relative;
     width: auto;
-    height: auto
+    height: auto;
+    z-index: 45
 }
 
 .element-absolute-centered {
@@ -20,7 +23,8 @@
 .div-section-container {
     position: relative;
     width: auto;
-    height: 100vh
+    height: 100vh;
+    z-index: 46
 }
 
 .div-section-background-1 {
@@ -95,10 +99,37 @@
 .div-features-interactive-image {
     height: 50%;
     width: 50%;
-    background-color: black
+    background-color: black;
+    z-index: 47
+}
+
+/*overlay div on image
+https://stackoverflow.com/questions/21395662/overlay-div-on-image*/ 
+
+.div-features-interactive-image-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 48
+}
+
+.div-features-content {
+    height: 70%;
+    width: 100%;
+    z-index: 50;
+    opacity: 0.5;
+    bottom: 0px;
+    position: absolute;
+    display: none
 }
 
 .features-interactive-image {
-    width: 750px;
-    height: 380px;
+    position: absolute;
+    width: 668px;
+    height: 343px;
+    z-index: 49
+}
+
+.features-content-text {
+    color: white
 }
