@@ -10,27 +10,42 @@
 </head>
     <body>
         <div class="div-scroll-me">
-            <div id="nav">
-                <ul>
+            <div id="navbar-wrapper">
+                <div id="navbar">
+                    
+                </div>
+                <!--<ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#colour">Colour</a></li>
                     <li><a href="#specs">Specs</a></li>
-                </ul>
+                </ul>-->
             </div>
             <div id="section1"
                  class="div-section-container div-section-background-1">
                 <a id="home" class="smooth"></a>
                 <div class="flexslider">
                     <ul class="slides">
-                        <!--<li>
+                        <li>
                             <img src="assets/images/flexslider/aston_martin.jpg"
                                  class="home-slider-image"/>
                         </li>
                         <li>
                             <img src="assets/images/flexslider/ws_Blue_Audi_RS5_Side_Angle_1920x1080.jpg"
                                  class="home-slider-image"/>
-                        </li>-->
+                        </li>
                     </ul>
+                    <a class="js-video-btn"
+                       href="#"
+                       data-video-id="5Ae43PNpuHY">
+                        <div class="modal-video-control"></div>
+
+                    </a>
+                        
+                    <!--<script>
+                        window.addEventListener('DOMContentLoaded',function(){	
+                            new ModalVideo(".js-video-btn");
+                        }); 
+                    </script>-->
                 </div>
 
             </div>
@@ -101,16 +116,30 @@
         
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
         <!--flexslider plugin-->
         <link rel="stylesheet" href="assets/plugins/flexslider_2.6.4/flexslider.css" type="text/css" />
         <script src="assets/plugins/flexslider_2.6.4/jquery.flexslider.js"></script>
         <script src="assets/plugins/flexslider_2.6.4/jquery.easing.js"></script>
         <script src="assets/plugins/flexslider_2.6.4/jquery.mousewheel.js"></script>
+        <!--modal video plugn-->
+        <link rel="stylesheet" type="text/css" href="assets/plugins/modal_video/modal-video.min.css"/>
+        <!--<script src="assets/plugins/modal_video/js/modal-video.min.js"></script>-->
+        <script src="https://www.jqueryscript.net/demo/Youtube-Vimeo-Modal-Plugin-jQuery/js/modal-video.min.js"></script>
+        <script>
+            $(".js-video-btn").modalVideo();
+            $(".js-video-btn").click(function() {
+                console.log("clicked!");
+            })
+        </script>
+
         <script type="text/javascript" charset="utf-8">
 
             $(window).load(function() {
 
-                $('.flexslider').flexslider();
+                $('.flexslider').flexslider({
+                    slideshow: false
+                });
 
             });
 
@@ -120,15 +149,15 @@
 
 
 
-            $('a').click(function (event) {
-                $.smoothScroll({
-                    scrollTarget: event.target.hash,
-                    speed: 2000
-                });
-                event.stopPropagation();
+            //$('a').click(function (event) {
+            //    $.smoothScroll({
+            //        scrollTarget: event.target.hash,
+            //        speed: 2000
+            //    });
+            //    event.stopPropagation();
 
-                //return false;
-            });
+            //    //return false;
+            //});
             $('.colour-picker-control').on('click', function() {
                 var headphonesColor = $(this).attr('data-image');
  
@@ -156,6 +185,7 @@
                     container.slideDown(2000);
                 }
             });
+          
         </script>
         
 

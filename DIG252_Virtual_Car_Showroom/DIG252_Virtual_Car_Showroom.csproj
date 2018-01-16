@@ -90,6 +90,7 @@
     <Content Include="assets\plugins\flexslider_2.6.4\jquery.easing.js" />
     <Content Include="assets\plugins\flexslider_2.6.4\jquery.flexslider.js" />
     <Content Include="assets\plugins\flexslider_2.6.4\jquery.mousewheel.js" />
+    <Content Include="assets\plugins\modal_video\modal-video.min.css" />
     <Content Include="assets\scripts\jquery-smooth-scroll.js" />
     <Content Include="Index.html" />
     <Content Include="test.html" />
