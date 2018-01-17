@@ -164,3 +164,116 @@ https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/
     background-color: black;
     z-index: 60
 }
+
+
+
+/*specs*/
+.div-specs-container {
+    top: 5%;
+    width: 75%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative
+
+}
+
+.div-specs-top-level-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1rem;
+    position: relative;
+    /*top: 5%;*/
+    height: 10%;
+    width: 100%;
+    background-color: lightblue
+
+}
+
+/*.div-specs-top-level-menu {
+    display: table;
+    position: relative;
+    top: 5%;
+    height: 15%;
+    width: 75%;
+    margin: 0 auto;
+    background-color: lightblue
+}*/
+
+.div-specs-top-level-menu-button {
+    /*display: table-cell;*/
+    background-color: white 
+}
+
+.div-specs-top-level-menu-button1 {
+    grid-row: 1/1;
+    grid-column: 1/1
+}
+
+.div-specs-top-level-menu-button2 {
+    grid-row: 1/1;
+    grid-column: 2/2
+}
+
+.div-specs-top-level-menu-button3 {
+    grid-row: 1/1;
+    grid-column: 3/3
+}
+
+.div-specs-top-level-menu-button4 {
+    grid-row: 1/1;
+    grid-column: 4/4
+}
+
+.div-specs-top-level-menu-button5 {
+    grid-row: 1/1;
+    grid-column: 5/5
+}
+
+.div-specs-content-container {
+    height: 90%;
+    width: 100%;
+    background-color: lightcyan
+}
+
+.div-specs-second-level-menu-container {
+    height: 100%;
+    width: 30%;
+    float: left
+}
+
+.div-specs-second-level-menu {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.div-specs-second-level-menu1 {
+    background-color: lightcyan;
+}
+
+.div-specs-second-level-menu2 {
+    background-color: red;
+}
+
+.div-specs-second-level-menu3 {
+    background-color: green;
+}
+
+.div-specs-second-level-menu4 {
+    background-color: black;
+}
+
+.div-specs-second-level-menu5 {
+    background-color: yellow;
+}
+
+.div-specs-second-level-content {
+    height: 100%;
+    width: 70%;
+    background-color: lightsteelblue;
+    float: left;
+}
