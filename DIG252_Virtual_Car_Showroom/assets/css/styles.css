@@ -93,9 +93,32 @@
     width: 50px;
     margin: 10px;
     border-radius: 50%;
-    background-color: black
+    /*background-color: black*/
 }
 
+.colour-picker-control-black-silica {
+    background: rgb(3,9,7)
+}
+
+.colour-picker-control-silver-metallic {
+    background-color: rgb(173,182,189)
+}
+
+.colour-picker-control-storm-grey {
+    background-color: rgb(66,98,123)
+}
+
+.colour-picker-control-blue-pearl {
+    background-color: rgb(37,40,85)
+}
+
+.colour-picker-control-pure-red {
+    background-color: rgb(170,30,41)
+}
+
+.colour-picker-control-wr-blue-pearl {
+    background-color: rgb(0,74,159)
+}
 .colour-picker-image {
     
     width: 656px;

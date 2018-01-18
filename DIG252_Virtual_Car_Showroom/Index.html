@@ -73,20 +73,24 @@
                         <img data-image="pure-red"
                              src="assets/images/colour_picker/pure-red.png"
                              class="element-absolute-centered colour-picker-image" />
+                        <img data-image="wr-blue-pearl"
+                             src="assets/images/colour_picker/wr-blue-pearl.png"
+                             class="element-absolute-centered colour-picker-image" />
                     </div>
                     <div class="div-colour-picker-controls-container">
                         <div class="div-colour-picker-controls">
                             <div data-image="crystal-black-silica"
-                                 class="colour-picker-control"></div>
+                                 class="colour-picker-control colour-picker-control-black-silica"></div>
                             <div data-image="ice-silver-metallic"
-                                 class="colour-picker-control"></div>
+                                 class="colour-picker-control colour-picker-control-silver-metallic"></div>
                             <div data-image="storm-grey-metallic"
-                                 class="colour-picker-control"></div>
+                                 class="colour-picker-control colour-picker-control-storm-grey"></div>
                             <div data-image="lapis-blue-pearl"
-                                 class="colour-picker-control"></div>
+                                 class="colour-picker-control colour-picker-control-blue-pearl"></div>
                             <div data-image="pure-red"
-                                 class="colour-picker-control"></div>
-                            <div class="colour-picker-control"></div>
+                                 class="colour-picker-control colour-picker-control-pure-red"></div>
+                            <div data-image="wr-blue-pearl"
+                                 class="colour-picker-control colour-picker-control-wr-blue-pearl"></div>
                         </div>    
                     </div>
                 </div>
@@ -251,6 +255,8 @@
                 $('.flexslider').flexslider({
                     slideshow: false
                 });
+                // set the active colour picker image
+                $('.div-colour-picker-image img[data-image = crystal-black-silica]').addClass('active');
 
             });
 

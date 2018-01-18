@@ -69,6 +69,7 @@
     <Content Include="assets\images\colour_picker\crystal-black-silica.png" />
     <Content Include="assets\images\colour_picker\ice-silver-metallic.png" />
     <Content Include="assets\images\colour_picker\lapis-blue-pearl.png" />
+    <Content Include="assets\images\colour_picker\wr-blue-pearl.png" />
     <Content Include="assets\images\colour_picker\pure-red.png" />
     <Content Include="assets\images\colour_picker\storm-grey-metallic.png" />
     <Content Include="assets\images\features\features-dashboard.jpg" />
