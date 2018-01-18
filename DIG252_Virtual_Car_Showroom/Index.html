@@ -102,18 +102,26 @@
                 <div id="features-interactive"
                      class="element-absolute-centered div-features-interactive-image">
                     <div class="div-features-interactive-image-container">
+                        <!--attribution - information icon-->
+                        <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
                         <img src="assets/images/features/features-dashboard.jpg"
                              class="features-interactive-image"/>
                         
+                        <img src="assets/images/features/icon-green.svg"
+                             class="features-interactive-image-icon features-interactive-image-icon-1"/>
+                        <img src="assets/images/features/icon-green.svg"
+                             class="features-interactive-image-icon features-interactive-image-icon-2" />
                         <div class="div-features-content">
+                            
+                                <h3 class="features-content-text">Pinch, zoom, flick</h3>
+                                <br/><br/>
                             <p class="features-content-text">
-                                Some text on the slide-in-panel
+                                Stay in tune on the road with Levorg's highly sophisticated infotainment system that puts you in control. Revel in a bright LCD touchscreen, similar to that of a smartphone. It has both voice and touchscreen functionality, while the full colour display ensures a crisp and clear view both day and night, with bold, beautiful graphics.
                             </p>
                         </div>
                     </div>
                     
                 </div>
-                <button id="features-button">Features</button>
             </div>
             <div id="section4"
                  class="div-section-container div-section-background-2">
@@ -222,8 +230,7 @@
     <script>
         $(".modal-video-control-icon").hover(
             function () {
-                //https: //www.tutorialspoint.com/jquery/effect-bounce.htm
-                    //$(this).effect("bounce", {times: 3}, "slow");
+
                 $(this).animate(
                     {
                         //top: "-=5px",
@@ -258,6 +265,11 @@
                 // set the active colour picker image
                 $('.div-colour-picker-image img[data-image = crystal-black-silica]').addClass('active');
 
+                // bounce the modal video play icon
+                //https: //www.tutorialspoint.com/jquery/effect-bounce.htm
+                $(".modal-video-control-icon").effect("bounce", {times: 3}, "slow");
+
+
             });
 
         </script>
@@ -282,14 +294,17 @@
                 $('.div-colour-picker-image img[data-image = ' + headphonesColor + ']').addClass('active');
                 $(this).addClass('active');
             });
-            $('.features-interactive-image').click(function(event) {
+            $('.features-interactive-image-icon').click(function(event) {
                 // Prevent the default event.
                 event.preventDefault();
 
                 // darken the image
-                $(this).fadeTo(2000, 0.2);
+                $(".features-interactive-image").fadeTo(2000, 0.2);
                 // features image
                 // https://www.bennadel.com/blog/1827-using-jquery-s-slideup-and-slidedown-methods-with-bottom-positioned-elements.htm
+
+                // hide the icons
+                $(".features-interactive-image-icon").hide();
                 // Get a reference to the container.
                 var container = $(".div-features-content");
                 // Toggle the slide based on its current
@@ -301,6 +316,13 @@
                     // Show - slide down.
                     container.slideDown(2000);
                 }
+            });
+
+            // close the slide
+            $(".div-features-content").click(function() {
+                $(this).slideUp(1000);
+                $(".features-interactive-image").fadeTo(1000, 1);
+                $(".features-interactive-image-icon").show();
             });
             $('#tab-container').easytabs();
           

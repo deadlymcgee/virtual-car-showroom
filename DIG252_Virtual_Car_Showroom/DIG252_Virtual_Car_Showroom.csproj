@@ -73,6 +73,8 @@
     <Content Include="assets\images\colour_picker\pure-red.png" />
     <Content Include="assets\images\colour_picker\storm-grey-metallic.png" />
     <Content Include="assets\images\features\features-dashboard.jpg" />
+    <Content Include="assets\images\features\icon-green.svg" />
+    <Content Include="assets\images\features\icon-black.svg" />
     <Content Include="assets\images\flexslider\play-button-black.svg" />
     <Content Include="assets\images\flexslider\play-button-white.svg" />
     <Content Include="assets\plugins\easy_tabls\jquery.easytabs.js" />
