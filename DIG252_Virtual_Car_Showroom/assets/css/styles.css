@@ -51,6 +51,26 @@
 }
 
 
+.div-navbar-link-container {
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 10%
+}
+
+.div-navbar-link {
+    width: 80%;
+    height: 60%;
+    text-align: center;
+}
+
+.navbar-text {
+    vertical-align: middle;
+    color: white;
+    font-family: sans-serif
+}
+
+
 .home-slider-image {
     height: 688px;
     width: 1355px;

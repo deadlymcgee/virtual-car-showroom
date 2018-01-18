@@ -12,7 +12,38 @@
         <div class="div-scroll-me">
             <div id="navbar-wrapper">
                 <div id="navbar">
+                    <div class="div-navbar-link-container"></div>
+                    <a href="#specs">
+                        <div class="div-navbar-link-container">
+                            <div class="div-navbar-link element-absolute-centered">
+                                <span class="navbar-text">SPECS</span>
+                            </div>
+                        </div>    
+                    </a>
+                    <div class="div-navbar-link-container">
+                        <a href="#features">
+                            <div class="div-navbar-link element-absolute-centered">
+                                <span class="navbar-text">FEATURES</span>
+                            </div>    
+                        </a>
+                        
+                    </div>    
+                    <a href="#colour">
+                        <div class="div-navbar-link-container">
+                            <div class="div-navbar-link element-absolute-centered">
+                                <span class="navbar-text">COLOUR</span>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#home">
+                        <div class="div-navbar-link-container">
+                            <div class="div-navbar-link element-absolute-centered">
+                                <span class="navbar-text">HOME</span>
+                            </div>
+                        </div>    
+                    </a>
                     
+
                 </div>
                 <!--<ul>
                     <li><a href="#features">Features</a></li>
@@ -278,15 +309,16 @@
 
 
 
-            //$('a').click(function (event) {
-            //    $.smoothScroll({
-            //        scrollTarget: event.target.hash,
-            //        speed: 2000
-            //    });
-            //    event.stopPropagation();
+            $('.div-navbar-link').click(function (event) {
+                var scrollTarget = event.target.hash;
+                $.smoothScroll({
+                    scrollTarget: event.target.hash,
+                    speed: 2000
+                });
+                event.stopPropagation();
 
-            //    //return false;
-            //});
+                //return false;
+            });
             $('.colour-picker-control').on('click', function() {
                 var headphonesColor = $(this).attr('data-image');
  
