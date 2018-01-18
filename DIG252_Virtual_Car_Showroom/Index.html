@@ -37,7 +37,11 @@
                     <a class="js-video-btn"
                        href="#"
                        data-video-id="5Ae43PNpuHY">
-                        <div class="modal-video-control"></div>
+                        <!--<div class="modal-video-control">-->
+                        <img src="assets/images/flexslider/play-button-black.svg"
+                                class="modal-video-control modal-video-control-icon"/>
+                            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+                        <!--</div>-->
 
                     </a>
                         
@@ -190,10 +194,15 @@
         </div>
         
         
-        
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
-        <script src="https://os.alfajango.com/js/jquery-1.9.1.min.js"></script>
-        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!--<script src="https://os.alfajango.com/js/jquery-1.9.1.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+
+        <!--jQuery UI-->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
         <!--easy tabs plugin-->
         <!--<script src="assets/plugins/easy_tabls/jquery.easytabs.js"></script>-->
         <script src="https://os.alfajango.com/js/jquery.easytabs.min.js"></script>
@@ -206,12 +215,34 @@
         <link rel="stylesheet" type="text/css" href="assets/plugins/modal_video/modal-video.min.css"/>
         <!--<script src="assets/plugins/modal_video/js/modal-video.min.js"></script>-->
         <script src="https://www.jqueryscript.net/demo/Youtube-Vimeo-Modal-Plugin-jQuery/js/modal-video.min.js"></script>
-        <script>
-            $(".js-video-btn").modalVideo();
-            $(".js-video-btn").click(function() {
-                console.log("clicked!");
-            })
-        </script>
+    <script>
+        $(".modal-video-control-icon").hover(
+            function () {
+                //https: //www.tutorialspoint.com/jquery/effect-bounce.htm
+                    //$(this).effect("bounce", {times: 3}, "slow");
+                $(this).animate(
+                    {
+                        //top: "-=5px",
+                        //left: "-=5px",
+                        height: "+=10px",
+                        width: "+=10px"
+            }
+                );
+            }, function() {
+                $(this).animate(
+                    {
+                        //top: "+=5px",
+                        //left: "+=5px",
+                        height: "-=10px",
+                        width: "-=10px"
+                    }
+                );
+            });
+        $(".js-video-btn").modalVideo();
+        $(".js-video-btn").click(function() {
+            console.log("clicked!");
+        })
+    </script>
 
         <script type="text/javascript" charset="utf-8">
 

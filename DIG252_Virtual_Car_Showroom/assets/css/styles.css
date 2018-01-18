@@ -154,15 +154,21 @@ https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/
 
 .modal-video-control {
     position: absolute;
-    top: 560px;
+    top: 550px;
     left: 0;
     right: 0;
     margin: auto;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
-    background-color: black;
+    /*border-radius: 50%;*/
+    /*background-color: black;*/
     z-index: 60
+}
+
+.modal-video-control-icon {
+    height: 50px;
+    width: 50px;
+    opacity: 0.5
 }
 
 
