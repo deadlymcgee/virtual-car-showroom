@@ -153,12 +153,18 @@
                         <img src="assets/images/features/icon-green.svg"
                              class="features-interactive-image-icon features-interactive-image-icon-2" />
                         <div class="div-features-content">
-                            
+                            <img src="assets/images/features/icon-close.svg"
+                                 class="features-deativate"/>
+                            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/egor-rumyantsev" title="Egor Rumyantsev">Egor Rumyantsev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+                            <div class="div-features-content-container element-absolute-centered">
                                 <h3 class="features-content-text">Pinch, zoom, flick</h3>
                                 <br/><br/>
-                            <p class="features-content-text">
-                                Stay in tune on the road with Levorg's highly sophisticated infotainment system that puts you in control. Revel in a bright LCD touchscreen, similar to that of a smartphone. It has both voice and touchscreen functionality, while the full colour display ensures a crisp and clear view both day and night, with bold, beautiful graphics.
-                            </p>
+                                <p class="features-content-text">
+                                    Stay in tune on the road with Levorg's highly sophisticated infotainment system that puts you in control. Revel in a bright LCD touchscreen, similar to that of a smartphone. It has both voice and touchscreen functionality, while the full colour display ensures a crisp and clear view both day and night, with bold, beautiful graphics.
+                                </p>    
+                            </div>
+                            
+                            
                         </div>
                     </div>
                     
@@ -223,7 +229,7 @@
                     </div>
                     <div class="div-specs-content-container">
                         <div class="div-specs-second-level-menu-container">
-                            <div id="tab1"
+                            <!--<div id="tab1"
                                  class="div-specs-second-level-menu div-specs-second-level-menu3">
 
                             </div>
@@ -234,7 +240,7 @@
                             <div id="tab3"
                                  class="div-specs-second-level-menu div-specs-second-level-menu2">
 
-                            </div>    
+                            </div>-->    
                         </div>
                         
                         <div class="div-specs-second-level-content">
@@ -359,16 +365,24 @@
                     container.slideUp(2000);
                 } else {
                     // Show - slide down.
-                    container.slideDown(2000);
+                    container.slideDown(2000, function() {
+                        // show the deactivate button
+                        $(".features-deativate").fadeTo(1000, 0.8);                    
+                    });
                 }
+
             });
 
             // close the slide
-            $(".div-features-content").click(function() {
+            $(".div-features-content").click(function () {
+                // hide the deactivate button
+                $(".features-deativate").hide();
                 $(this).slideUp(1000);
                 $(".features-interactive-image").fadeTo(1000, 1);
                 $(".features-interactive-image-icon").show();
             });
+
+            
             $('#tab-container').easytabs();
           
         </script>

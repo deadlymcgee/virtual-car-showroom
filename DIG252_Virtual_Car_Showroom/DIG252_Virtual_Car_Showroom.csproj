@@ -73,6 +73,7 @@
     <Content Include="assets\images\colour_picker\wr-blue-pearl.png" />
     <Content Include="assets\images\colour_picker\pure-red.png" />
     <Content Include="assets\images\colour_picker\storm-grey-metallic.png" />
+    <Content Include="assets\images\features\icon-close.svg" />
     <Content Include="assets\images\features\features-dashboard.jpg" />
     <Content Include="assets\images\features\icon-green.svg" />
     <Content Include="assets\images\features\icon-black.svg" />

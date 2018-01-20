@@ -187,7 +187,24 @@ https://stackoverflow.com/questions/21395662/overlay-div-on-image*/
     bottom: 0px;
     position: absolute;
     display: none;
+    cursor: crosshair
+    /*cursor: url("/assets/images/features/icon-close.svg"), auto*/
     /*padding: 10%*/
+}
+
+.div-features-content-container {
+    height: 70%;
+    width:80%
+}
+
+.features-deativate {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: 0px;
+    height: 30px;
+    width: 30px
+    
 }
 
 .features-interactive-image {
