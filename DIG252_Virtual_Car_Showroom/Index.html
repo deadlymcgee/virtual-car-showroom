@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>DIG252 - Virtual Car Showroom</title>
+    <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
     
 
@@ -12,43 +13,52 @@
         <div class="div-scroll-me">
             <div id="navbar-wrapper">
                 <div id="navbar">
+                    <div class="div-navbar-link-logo-container">
+                        <a href="#home">
+                            <div class="div-navbar-link element-absolute-centered">
+                                <span class="navbar-text">OPTIMUS</span>
+                            </div>    
+                        </a>
+                    </div>
                     <div class="div-navbar-link-container"></div>
-                    <a href="#specs">
-                        <div class="div-navbar-link-container">
+                    <div class="div-navbar-link-container">
+                        <a href="#specs">
                             <div class="div-navbar-link element-absolute-centered">
                                 <span class="navbar-text">SPECS</span>
                             </div>
-                        </div>    
-                    </a>
+                        </a>
+                    </div>
                     <div class="div-navbar-link-container">
                         <a href="#features">
                             <div class="div-navbar-link element-absolute-centered">
                                 <span class="navbar-text">FEATURES</span>
-                            </div>    
+                            </div>
                         </a>
-                        
-                    </div>    
-                    <a href="#colour">
-                        <div class="div-navbar-link-container">
+
+                    </div>
+                    <div class="div-navbar-link-container">
+                        <a href="#colour">
                             <div class="div-navbar-link element-absolute-centered">
                                 <span class="navbar-text">COLOUR</span>
                             </div>
-                        </div>    
-                    </a>
-                    <a href="#home">
-                        <div class="div-navbar-link-container">
+                        </a>
+                    </div>
+                    <div class="div-navbar-link-container">
+                        <a href="#home">
                             <div class="div-navbar-link element-absolute-centered">
                                 <span class="navbar-text">HOME</span>
                             </div>
-                        </div>    
-                    </a>
-                    
+                        </a>
 
+                    </div>
                 </div>
                 <!--<ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#colour">Colour</a></li>
-                    <li><a href="#specs">Specs</a></li>
+                    <li><a class="test"
+                           href="#features">Features</a></li>
+                    <li><a class="test"
+                           href="#colour">Colour</a></li>
+                    <li><a class="test"
+                           href="#specs">Specs</a></li>
                 </ul>-->
             </div>
             <div id="section1"
@@ -86,7 +96,7 @@
             </div>
             <div id="section2"
                  class="div-section-container div-section-background-2">
-                <a id="features" class="smooth"></a>
+                <a id="colour" class="smooth"></a>
                 <div class="div-colour-picker-container">
                     <div class="div-colour-picker-image">
                         <img data-image="crystal-black-silica"
@@ -129,7 +139,7 @@
             </div>
             <div id="section3"
                  class="div-section-container div-section-background-1">
-                <a id="colour" class="smooth"></a>
+                <a id="features" class="smooth"></a>
                 <div id="features-interactive"
                      class="element-absolute-centered div-features-interactive-image">
                     <div class="div-features-interactive-image-container">
@@ -310,14 +320,17 @@
 
 
             $('.div-navbar-link').click(function (event) {
-                var scrollTarget = event.target.hash;
+                event.preventDefault();
+                //var scrollTarget = event.target.hash;
+                var theElement = $(this);
+                var scrollTarget = "#" + event.target.innerText.toLowerCase();
                 $.smoothScroll({
-                    scrollTarget: event.target.hash,
+                    scrollTarget: "#" + event.target.innerText.toLowerCase(),
                     speed: 2000
                 });
                 event.stopPropagation();
 
-                //return false;
+                return false;
             });
             $('.colour-picker-control').on('click', function() {
                 var headphonesColor = $(this).attr('data-image');

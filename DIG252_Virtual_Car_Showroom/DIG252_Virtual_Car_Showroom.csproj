@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\reset.css" />
     <Content Include="assets\images\colour_picker\crystal-black-silica.png" />
     <Content Include="assets\images\colour_picker\ice-silver-metallic.png" />
     <Content Include="assets\images\colour_picker\lapis-blue-pearl.png" />

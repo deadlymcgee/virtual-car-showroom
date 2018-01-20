@@ -58,10 +58,18 @@
     width: 10%
 }
 
+.div-navbar-link-logo-container {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 12%
+}
+
 .div-navbar-link {
     width: 80%;
     height: 60%;
     text-align: center;
+    z-index: 101
 }
 
 .navbar-text {
