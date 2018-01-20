@@ -120,18 +120,44 @@
                     </div>
                     <div class="div-colour-picker-controls-container">
                         <div class="div-colour-picker-controls">
-                            <div data-image="crystal-black-silica"
-                                 class="colour-picker-control colour-picker-control-black-silica"></div>
-                            <div data-image="ice-silver-metallic"
-                                 class="colour-picker-control colour-picker-control-silver-metallic"></div>
-                            <div data-image="storm-grey-metallic"
-                                 class="colour-picker-control colour-picker-control-storm-grey"></div>
-                            <div data-image="lapis-blue-pearl"
-                                 class="colour-picker-control colour-picker-control-blue-pearl"></div>
-                            <div data-image="pure-red"
-                                 class="colour-picker-control colour-picker-control-pure-red"></div>
-                            <div data-image="wr-blue-pearl"
-                                 class="colour-picker-control colour-picker-control-wr-blue-pearl"></div>
+                            <div class="div-colour-picker-control-wrapper">
+                                <div data-image="crystal-black-silica"
+                                     class="colour-picker-control">
+                                </div>
+                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-black-silica"></div>    
+                            </div>
+                            <div class="div-colour-picker-control-wrapper">
+                                <div data-image="ice-silver-metallic"
+                                     class="colour-picker-control">
+                                </div>        
+                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-silver-metallic"></div>
+                            </div>
+                            <div class="div-colour-picker-control-wrapper">
+                                <div data-image="storm-grey-metallic"
+                                     class="colour-picker-control">
+                                </div>    
+                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-storm-grey"></div>
+                            </div>
+                            <div class="div-colour-picker-control-wrapper">
+                                <div data-image="lapis-blue-pearl"
+                                     class="colour-picker-control">
+                                </div>    
+                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-blue-pearl"></div>
+                            </div>
+                            <div class="div-colour-picker-control-wrapper">
+                                <div data-image="pure-red"
+                                     class="colour-picker-control">
+                                </div>    
+                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-pure-red"></div>
+                            </div>
+                            <div class="div-colour-picker-control-wrapper">
+                                <div data-image="wr-blue-pearl"
+                                     class="colour-picker-control">
+                                </div>    
+                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-wr-blue-pearl"></div>
+                            </div>
+                            <!--(DeWoody, 2010)-->
+                            
                         </div>    
                     </div>
                 </div>
@@ -345,6 +371,23 @@
                 $('.div-colour-picker-image img[data-image = ' + headphonesColor + ']').addClass('active');
                 $(this).addClass('active');
             });
+
+            $(".colour-picker-control-inner").hover(
+                function() {
+                    $(this)
+                        .parent()
+                        .find(".colour-picker-control")
+                        .show();
+                },
+                function() {
+                    $(this)
+                        .parent()
+                        .find(".colour-picker-control")
+                        .hide();
+                }
+            );
+            
+
             $('.features-interactive-image-icon').click(function(event) {
                 // Prevent the default event.
                 event.preventDefault();

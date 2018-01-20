@@ -115,17 +115,38 @@
 
 }
 
+.div-colour-picker-control-wrapper {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    float: left
+}
+
 .colour-picker-control {
-    float: left;
-    height: 50px;
-    width: 50px;
-    margin: 10px;
+    /*float: left;*/
+    height: 64px;
+    width: 64px;
+    margin: 1px;
     border-radius: 50%;
+    /*opacity: 0;*/
+    display: none;
+    border: 2px solid black;
+    z-index: 900;
     /*background-color: black*/
 }
 
+.colour-picker-control-hover {
+}
+
+.colour-picker-control-inner {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 1000
+}
+
 .colour-picker-control-black-silica {
-    background: rgb(3,9,7)
+    background-color: rgb(3,9,7)
 }
 
 .colour-picker-control-silver-metallic {
