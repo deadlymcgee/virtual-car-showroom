@@ -121,40 +121,40 @@
                     <div class="div-colour-picker-controls-container">
                         <div class="div-colour-picker-controls">
                             <div class="div-colour-picker-control-wrapper">
-                                <div data-image="crystal-black-silica"
-                                     class="colour-picker-control">
+                                <div class="colour-picker-control">
                                 </div>
-                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-black-silica"></div>    
+                                <div data-image="crystal-black-silica"
+                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-black-silica"></div>    
                             </div>
                             <div class="div-colour-picker-control-wrapper">
-                                <div data-image="ice-silver-metallic"
-                                     class="colour-picker-control">
+                                <div class="colour-picker-control">
                                 </div>        
-                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-silver-metallic"></div>
+                                <div data-image="ice-silver-metallic"
+                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-silver-metallic"></div>
                             </div>
                             <div class="div-colour-picker-control-wrapper">
+                                <div class="colour-picker-control">
+                                </div>    
                                 <div data-image="storm-grey-metallic"
-                                     class="colour-picker-control">
-                                </div>    
-                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-storm-grey"></div>
+                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-storm-grey"></div>
                             </div>
                             <div class="div-colour-picker-control-wrapper">
+                                <div class="colour-picker-control">
+                                </div>    
                                 <div data-image="lapis-blue-pearl"
-                                     class="colour-picker-control">
-                                </div>    
-                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-blue-pearl"></div>
+                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-blue-pearl"></div>
                             </div>
                             <div class="div-colour-picker-control-wrapper">
+                                <div class="colour-picker-control">
+                                </div>    
                                 <div data-image="pure-red"
-                                     class="colour-picker-control">
-                                </div>    
-                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-pure-red"></div>
+                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-pure-red"></div>
                             </div>
                             <div class="div-colour-picker-control-wrapper">
-                                <div data-image="wr-blue-pearl"
-                                     class="colour-picker-control">
+                                <div class="colour-picker-control">
                                 </div>    
-                                <div class="colour-picker-control-inner element-absolute-centered colour-picker-control-wr-blue-pearl"></div>
+                                <div data-image="wr-blue-pearl"
+                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-wr-blue-pearl"></div>
                             </div>
                             <!--(DeWoody, 2010)-->
                             
@@ -370,12 +370,17 @@
 
                 return false;
             });
-            $('.colour-picker-control').on('click', function() {
+            $('.colour-picker-control-inner').on('click', function() {
                 var headphonesColor = $(this).attr('data-image');
  
-                $('.active').removeClass('active');
+                $('.active').removeClass('active colour-picker-control-active');
                 $('.div-colour-picker-image img[data-image = ' + headphonesColor + ']').addClass('active');
-                $(this).addClass('active');
+                //$(this).addClass('active');
+                $(this)
+                    .parent()
+                    .find(".colour-picker-control")
+                    .addClass("colour-picker-control-active active");
+
             });
 
             $(".colour-picker-control-inner").hover(
@@ -383,13 +388,13 @@
                     $(this)
                         .parent()
                         .find(".colour-picker-control")
-                        .show();
+                        .addClass("colour-picker-control-hover");
                 },
                 function() {
                     $(this)
                         .parent()
                         .find(".colour-picker-control")
-                        .hide();
+                        .removeClass("colour-picker-control-hover");
                 }
             );
             

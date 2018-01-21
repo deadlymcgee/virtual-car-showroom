@@ -129,20 +129,24 @@
     margin: 1px;
     border-radius: 50%;
     /*opacity: 0;*/
-    display: none;
-    border: 2px solid black;
-    z-index: 900;
+    /*display: none;*/
+    /*z-index: 1000;*/
     /*background-color: black*/
 }
 
 .colour-picker-control-hover {
+    border: 2px solid black;
+}
+
+.colour-picker-control-active {
+    border: 2px solid red;
 }
 
 .colour-picker-control-inner {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    z-index: 1000
+    /*z-index: 900*/
 }
 
 .colour-picker-control-black-silica {
