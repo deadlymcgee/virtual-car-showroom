@@ -174,9 +174,9 @@
                         <img src="assets/images/features/features-dashboard.jpg"
                              class="features-interactive-image"/>
                         
-                        <img src="assets/images/features/icon-green.svg"
+                        <img src="assets/images/features/information-icon-green-bruce.svg"
                              class="features-interactive-image-icon features-interactive-image-icon-1"/>
-                        <img src="assets/images/features/icon-green.svg"
+                        <img src="assets/images/features/information-icon-green-bruce.svg"
                              class="features-interactive-image-icon features-interactive-image-icon-2" />
                         <div class="div-features-content">
                             <img src="assets/images/features/icon-close.svg"
@@ -439,6 +439,20 @@
                 $(".features-interactive-image").fadeTo(1000, 1);
                 $(".features-interactive-image-icon").show();
             });
+
+            // features icon visual cue
+            $(".features-interactive-image-icon").hover(
+                function() {
+                    $(this).attr({
+                        "src": "assets/images/features/information-icon-white-bruce.svg"
+                    });
+                },
+                function() {
+                    $(this).attr({
+                        "src": "assets/images/features/information-icon-green-bruce.svg"
+                    });
+                }
+            );
 
             
             $('#tab-container').easytabs();

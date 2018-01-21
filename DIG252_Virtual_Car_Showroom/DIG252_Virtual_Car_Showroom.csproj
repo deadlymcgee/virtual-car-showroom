@@ -77,6 +77,8 @@
     <Content Include="assets\images\features\features-dashboard.jpg" />
     <Content Include="assets\images\features\icon-green.svg" />
     <Content Include="assets\images\features\icon-black.svg" />
+    <Content Include="assets\images\features\information-icon-green-bruce.svg" />
+    <Content Include="assets\images\features\information-icon-white-bruce.svg" />
     <Content Include="assets\images\flexslider\play-button-black.svg" />
     <Content Include="assets\images\flexslider\play-button-white.svg" />
     <Content Include="assets\images\modal_video\play-icon-black-freepik.svg" />
