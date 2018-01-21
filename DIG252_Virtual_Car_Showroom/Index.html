@@ -77,7 +77,7 @@
                     </ul>
                     <a class="js-video-btn"
                        href="#"
-                       data-video-id="5Ae43PNpuHY">
+                       data-video-id="5Q0Svvdrx_E">
                         <!--<div class="modal-video-control">-->
                         <img src="assets/images/modal_video/play-icon-black-freepik.svg"
                                 class="modal-video-control modal-video-control-icon"/>
@@ -341,8 +341,12 @@
                 $('.flexslider').flexslider({
                     slideshow: false
                 });
-                // set the active colour picker image
+                // set the active colour picker image and control
                 $('.div-colour-picker-image img[data-image = crystal-black-silica]').addClass('active');
+                $(".colour-picker-control-inner[data-image = crystal-black-silica]")
+                    .parent()
+                    .find('.colour-picker-control')
+                    .addClass('colour-picker-control-active');
 
                 // bounce the modal video play icon
                 //https: //www.tutorialspoint.com/jquery/effect-bounce.htm
