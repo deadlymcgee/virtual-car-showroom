@@ -98,7 +98,7 @@
   <ItemGroup>
     <Content Include="assets\css\styles.css" />
     <Content Include="assets\images\flexslider\aston_martin.jpg" />
-    <Content Include="assets\images\flexslider\ws_Blue_Audi_RS5_Side_Angle_1920x1080.jpg" />
+    <Content Include="assets\images\flexslider\blue-audi-RS5.jpg" />
     <Content Include="assets\plugins\flexslider_2.6.4\flexslider.css" />
     <Content Include="assets\plugins\flexslider_2.6.4\jquery.easing.js" />
     <Content Include="assets\plugins\flexslider_2.6.4\jquery.flexslider.js" />
@@ -110,7 +110,6 @@
     <Content Include="assets\scripts\jquery.min.js" />
     <Content Include="assets\scripts\modal-video.js" />
     <Content Include="Index.html" />
-    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
