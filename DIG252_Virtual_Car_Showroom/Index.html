@@ -1,464 +1,349 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>DIG252 - Virtual Car Showroom</title>
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
-    
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!--modal video plugn-->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/modal_video/modal-video.min.css"/>
 
 
 </head>
-    <body>
-        <div class="div-scroll-me">
-            <div id="navbar-wrapper">
-                <div id="navbar">
-                    <div class="div-navbar-link-logo-container">
-                        <a href="#home">
-                            <div class="div-navbar-link element-absolute-centered">
-                                <span class="navbar-text">OPTIMUS</span>
-                            </div>    
-                        </a>
-                    </div>
-                    <div class="div-navbar-link-container"></div>
-                    <div class="div-navbar-link-container">
-                        <a href="#specs">
-                            <div class="div-navbar-link element-absolute-centered">
-                                <span class="navbar-text">SPECS</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="div-navbar-link-container">
-                        <a href="#features">
-                            <div class="div-navbar-link element-absolute-centered">
-                                <span class="navbar-text">FEATURES</span>
-                            </div>
-                        </a>
+<body>
+    <div class="div-scroll-me">
+        <div id="navbar-wrapper">
+            <div id="navbar">
+                <div class="div-navbar-link-logo-container">
+                    <a href="#home">
+                        <div class="div-navbar-link element-absolute-centered">
+                            <span class="navbar-text">OPTIMUS</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="div-navbar-link-container"></div>
+                <div class="div-navbar-link-container">
+                    <a href="#specs">
+                        <div class="div-navbar-link element-absolute-centered">
+                            <span class="navbar-text">SPECS</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="div-navbar-link-container">
+                    <a href="#features">
+                        <div class="div-navbar-link element-absolute-centered">
+                            <span class="navbar-text">FEATURES</span>
+                        </div>
+                    </a>
 
-                    </div>
-                    <div class="div-navbar-link-container">
-                        <a href="#colour">
-                            <div class="div-navbar-link element-absolute-centered">
-                                <span class="navbar-text">COLOUR</span>
+                </div>
+                <div class="div-navbar-link-container">
+                    <a href="#colour">
+                        <div class="div-navbar-link element-absolute-centered">
+                            <span class="navbar-text">COLOUR</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="div-navbar-link-container">
+                    <a href="#home">
+                        <div class="div-navbar-link element-absolute-centered">
+                            <span class="navbar-text">HOME</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!--<ul>
+                <li>
+                    <a class="test"
+                       href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="test"
+                       href="#colour">Colour</a>
+                </li>
+                <li>
+                    <a class="test"
+                       href="#specs">Specs</a>
+                </li>
+            </ul>-->
+        </div>
+        <div id="section1"
+             class="div-section-container div-section-background-1">
+            <a id="home" class="smooth"></a>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="assets/images/flexslider/aston_martin.jpg"
+                             class="home-slider-image"/>
+                    </li>
+                    <li>
+                        <img src="assets/images/flexslider/ws_Blue_Audi_RS5_Side_Angle_1920x1080.jpg"
+                             class="home-slider-image"/>
+                    </li>
+                </ul>
+                <a class="js-video-btn"
+                   href="#"
+                   data-video-id="5Q0Svvdrx_E">
+                    <!--<div class="modal-video-control">-->
+                    <img src="assets/images/modal_video/play-icon-black-freepik.svg"
+                         class="modal-video-control modal-video-control-icon"/>
+                    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+                    <!--</div>-->
+
+                </a>
+
+                <!--<script>
+                                window.addEventListener('DOMContentLoaded',function(){	
+                                    new ModalVideo(".js-video-btn");
+                                }); 
+                            </script>-->
+            </div>
+
+        </div>
+        <div id="section2"
+             class="div-section-container div-section-background-2">
+            <a id="colour" class="smooth"></a>
+            <div class="div-colour-picker-container">
+                <div class="div-colour-picker-image">
+                    <img data-image="crystal-black-silica"
+                         src="assets/images/colour_picker/crystal-black-silica.png"
+                         class="element-absolute-centered colour-picker-image"/>
+                    <img data-image="ice-silver-metallic"
+                         src="assets/images/colour_picker/ice-silver-metallic.png"
+                         class="element-absolute-centered colour-picker-image"/>
+                    <img data-image="storm-grey-metallic"
+                         src="assets/images/colour_picker/storm-grey-metallic.png"
+                         class="element-absolute-centered colour-picker-image"/>
+                    <img data-image="lapis-blue-pearl"
+                         src="assets/images/colour_picker/lapis-blue-pearl.png"
+                         class="element-absolute-centered colour-picker-image"/>
+                    <img data-image="pure-red"
+                         src="assets/images/colour_picker/pure-red.png"
+                         class="element-absolute-centered colour-picker-image"/>
+                    <img data-image="wr-blue-pearl"
+                         src="assets/images/colour_picker/wr-blue-pearl.png"
+                         class="element-absolute-centered colour-picker-image"/>
+                </div>
+                <div class="div-colour-picker-controls-container">
+                    <div class="div-colour-picker-controls">
+                        <div class="div-colour-picker-control-wrapper">
+                            <div class="colour-picker-control">
                             </div>
-                        </a>
-                    </div>
-                    <div class="div-navbar-link-container">
-                        <a href="#home">
-                            <div class="div-navbar-link element-absolute-centered">
-                                <span class="navbar-text">HOME</span>
+                            <div data-image="crystal-black-silica"
+                                 class="colour-picker-control-inner element-absolute-centered colour-picker-control-black-silica"></div>
+                        </div>
+                        <div class="div-colour-picker-control-wrapper">
+                            <div class="colour-picker-control">
                             </div>
-                        </a>
+                            <div data-image="ice-silver-metallic"
+                                 class="colour-picker-control-inner element-absolute-centered colour-picker-control-silver-metallic"></div>
+                        </div>
+                        <div class="div-colour-picker-control-wrapper">
+                            <div class="colour-picker-control">
+                            </div>
+                            <div data-image="storm-grey-metallic"
+                                 class="colour-picker-control-inner element-absolute-centered colour-picker-control-storm-grey"></div>
+                        </div>
+                        <div class="div-colour-picker-control-wrapper">
+                            <div class="colour-picker-control">
+                            </div>
+                            <div data-image="lapis-blue-pearl"
+                                 class="colour-picker-control-inner element-absolute-centered colour-picker-control-blue-pearl"></div>
+                        </div>
+                        <div class="div-colour-picker-control-wrapper">
+                            <div class="colour-picker-control">
+                            </div>
+                            <div data-image="pure-red"
+                                 class="colour-picker-control-inner element-absolute-centered colour-picker-control-pure-red"></div>
+                        </div>
+                        <div class="div-colour-picker-control-wrapper">
+                            <div class="colour-picker-control">
+                            </div>
+                            <div data-image="wr-blue-pearl"
+                                 class="colour-picker-control-inner element-absolute-centered colour-picker-control-wr-blue-pearl"></div>
+                        </div>
+                        <!--(DeWoody, 2010)-->
 
                     </div>
                 </div>
-                <!--<ul>
-                    <li><a class="test"
-                           href="#features">Features</a></li>
-                    <li><a class="test"
-                           href="#colour">Colour</a></li>
-                    <li><a class="test"
-                           href="#specs">Specs</a></li>
-                </ul>-->
             </div>
-            <div id="section1"
-                 class="div-section-container div-section-background-1">
-                <a id="home" class="smooth"></a>
-                <div class="flexslider">
-                    <ul class="slides">
+
+        </div>
+        <div id="section3"
+             class="div-section-container div-section-background-1">
+            <a id="features" class="smooth"></a>
+            <div id="features-interactive"
+                 class="element-absolute-centered div-features-interactive-image">
+                <div class="div-features-interactive-image-container">
+                    <!--attribution - information icon-->
+                    <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+                    <img src="assets/images/features/features-dashboard.jpg"
+                         class="features-interactive-image"/>
+
+                    <img src="assets/images/features/information-icon-green-bruce.svg"
+                         class="features-interactive-image-icon features-interactive-image-icon-1"/>
+                    <img src="assets/images/features/information-icon-green-bruce.svg"
+                         class="features-interactive-image-icon features-interactive-image-icon-2"/>
+                    <div class="div-features-content">
+                        <img src="assets/images/features/icon-close.svg"
+                             class="features-deativate"/>
+                        <!--<div>Icons made by <a href="https://www.flaticon.com/authors/egor-rumyantsev" title="Egor Rumyantsev">Egor Rumyantsev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+                        <div class="div-features-content-container element-absolute-centered">
+                            <h3 class="features-content-text">Pinch, zoom, flick</h3>
+                            <br/><br/>
+                            <p class="features-content-text">
+                                Stay in tune on the road with Levorg's highly sophisticated infotainment system that puts you in control. Revel in a bright LCD touchscreen, similar to that of a smartphone. It has both voice and touchscreen functionality, while the full colour display ensures a crisp and clear view both day and night, with bold, beautiful graphics.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="section4"
+             class="div-section-container div-section-background-2">
+            <a id="specs" class="smooth"></a>
+            <div id="tab-container"
+                 class="div-specs-container">
+                <div class="div-specs-top-level-menu">
+                    <ul>
                         <li>
-                            <img src="assets/images/flexslider/aston_martin.jpg"
-                                 class="home-slider-image"/>
+                            <a href="#tab1">
+                                <div class="div-specs-top-level-menu-button1">
+
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <img src="assets/images/flexslider/ws_Blue_Audi_RS5_Side_Angle_1920x1080.jpg"
-                                 class="home-slider-image"/>
+                            <a href="#tab2">
+                                <div class="div-specs-top-level-menu-button2">
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab3">
+                                <div class="div-specs-top-level-menu-button3">
+
+                                </div>
+                            </a>
                         </li>
                     </ul>
-                    <a class="js-video-btn"
-                       href="#"
-                       data-video-id="5Q0Svvdrx_E">
-                        <!--<div class="modal-video-control">-->
-                        <img src="assets/images/modal_video/play-icon-black-freepik.svg"
-                                class="modal-video-control modal-video-control-icon"/>
-                            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-                        <!--</div>-->
 
-                    </a>
-                        
-                    <!--<script>
-                        window.addEventListener('DOMContentLoaded',function(){	
-                            new ModalVideo(".js-video-btn");
-                        }); 
-                    </script>-->
-                </div>
 
-            </div>
-            <div id="section2"
-                 class="div-section-container div-section-background-2">
-                <a id="colour" class="smooth"></a>
-                <div class="div-colour-picker-container">
-                    <div class="div-colour-picker-image">
-                        <img data-image="crystal-black-silica"
-                             src="assets/images/colour_picker/crystal-black-silica.png"
-                             class="element-absolute-centered colour-picker-image"/>
-                        <img data-image="ice-silver-metallic"
-                             src="assets/images/colour_picker/ice-silver-metallic.png"
-                             class="element-absolute-centered colour-picker-image"/>
-                        <img data-image="storm-grey-metallic"
-                             src="assets/images/colour_picker/storm-grey-metallic.png"
-                             class="element-absolute-centered colour-picker-image"/>
-                        <img data-image="lapis-blue-pearl"
-                             src="assets/images/colour_picker/lapis-blue-pearl.png"
-                             class="element-absolute-centered colour-picker-image" />
-                        <img data-image="pure-red"
-                             src="assets/images/colour_picker/pure-red.png"
-                             class="element-absolute-centered colour-picker-image" />
-                        <img data-image="wr-blue-pearl"
-                             src="assets/images/colour_picker/wr-blue-pearl.png"
-                             class="element-absolute-centered colour-picker-image" />
+                    <div class="div-specs-top-level-menu-button4">
+
                     </div>
-                    <div class="div-colour-picker-controls-container">
-                        <div class="div-colour-picker-controls">
-                            <div class="div-colour-picker-control-wrapper">
-                                <div class="colour-picker-control">
-                                </div>
-                                <div data-image="crystal-black-silica"
-                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-black-silica"></div>    
-                            </div>
-                            <div class="div-colour-picker-control-wrapper">
-                                <div class="colour-picker-control">
-                                </div>        
-                                <div data-image="ice-silver-metallic"
-                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-silver-metallic"></div>
-                            </div>
-                            <div class="div-colour-picker-control-wrapper">
-                                <div class="colour-picker-control">
-                                </div>    
-                                <div data-image="storm-grey-metallic"
-                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-storm-grey"></div>
-                            </div>
-                            <div class="div-colour-picker-control-wrapper">
-                                <div class="colour-picker-control">
-                                </div>    
-                                <div data-image="lapis-blue-pearl"
-                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-blue-pearl"></div>
-                            </div>
-                            <div class="div-colour-picker-control-wrapper">
-                                <div class="colour-picker-control">
-                                </div>    
-                                <div data-image="pure-red"
-                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-pure-red"></div>
-                            </div>
-                            <div class="div-colour-picker-control-wrapper">
-                                <div class="colour-picker-control">
-                                </div>    
-                                <div data-image="wr-blue-pearl"
-                                     class="colour-picker-control-inner element-absolute-centered colour-picker-control-wr-blue-pearl"></div>
-                            </div>
-                            <!--(DeWoody, 2010)-->
-                            
-                        </div>    
+                    <div class="div-specs-top-level-menu-button5">
+
                     </div>
-                </div>
+                    <!--<div class="div-specs-top-level-menu-button">
 
-            </div>
-            <div id="section3"
-                 class="div-section-container div-section-background-1">
-                <a id="features" class="smooth"></a>
-                <div id="features-interactive"
-                     class="element-absolute-centered div-features-interactive-image">
-                    <div class="div-features-interactive-image-container">
-                        <!--attribution - information icon-->
-                        <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-                        <img src="assets/images/features/features-dashboard.jpg"
-                             class="features-interactive-image"/>
-                        
-                        <img src="assets/images/features/information-icon-green-bruce.svg"
-                             class="features-interactive-image-icon features-interactive-image-icon-1"/>
-                        <img src="assets/images/features/information-icon-green-bruce.svg"
-                             class="features-interactive-image-icon features-interactive-image-icon-2" />
-                        <div class="div-features-content">
-                            <img src="assets/images/features/icon-close.svg"
-                                 class="features-deativate"/>
-                            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/egor-rumyantsev" title="Egor Rumyantsev">Egor Rumyantsev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-                            <div class="div-features-content-container element-absolute-centered">
-                                <h3 class="features-content-text">Pinch, zoom, flick</h3>
-                                <br/><br/>
-                                <p class="features-content-text">
-                                    Stay in tune on the road with Levorg's highly sophisticated infotainment system that puts you in control. Revel in a bright LCD touchscreen, similar to that of a smartphone. It has both voice and touchscreen functionality, while the full colour display ensures a crisp and clear view both day and night, with bold, beautiful graphics.
-                                </p>    
-                            </div>
-                            
-                            
-                        </div>
                     </div>
-                    
+                    <div class="div-specs-top-level-menu-button">
+
+                    </div>
+                    <div class="div-specs-top-level-menu-button">
+
+                    </div>
+                    <div class="div-specs-top-level-menu-button">
+
+                    </div>
+                    <div class="div-specs-top-level-menu-button">
+
+                    </div>-->
                 </div>
-            </div>
-            <div id="section4"
-                 class="div-section-container div-section-background-2">
-                <a id="specs" class="smooth"></a>
-                <div id="tab-container"
-                     class="div-specs-container">
-                    <div class="div-specs-top-level-menu">
-                        <ul>
-                            <li>
-                                <a href="#tab1">
-                                    <div class="div-specs-top-level-menu-button1">
-                        
-                                    </div>    
-                                </a>        
-                            </li>
-                            <li>
-                                <a href="#tab2">
-                                    <div class="div-specs-top-level-menu-button2">
-
-                                    </div>    
-                                </a>        
-                            </li>
-                            <li>
-                                <a href="#tab3">
-                                    <div class="div-specs-top-level-menu-button3">
-
-                                    </div>    
-                                </a>        
-                            </li>
-                        </ul>
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="div-specs-top-level-menu-button4">
+                <div class="div-specs-content-container">
+                    <div class="div-specs-second-level-menu-container">
+                        <!--<div id="tab1"
+                                 class="div-specs-second-level-menu div-specs-second-level-menu3">
 
                         </div>
-                        <div class="div-specs-top-level-menu-button5">
+                        <div id="tab2"
+                             class="div-specs-second-level-menu div-specs-second-level-menu1">
 
                         </div>
-                        <!--<div class="div-specs-top-level-menu-button">
-
-                        </div>
-                        <div class="div-specs-top-level-menu-button">
-
-                        </div>
-                        <div class="div-specs-top-level-menu-button">
-
-                        </div>
-                        <div class="div-specs-top-level-menu-button">
-
-                        </div>
-                        <div class="div-specs-top-level-menu-button">
+                        <div id="tab3"
+                             class="div-specs-second-level-menu div-specs-second-level-menu2">
 
                         </div>-->
                     </div>
-                    <div class="div-specs-content-container">
-                        <div class="div-specs-second-level-menu-container">
-                            <!--<div id="tab1"
-                                 class="div-specs-second-level-menu div-specs-second-level-menu3">
 
-                            </div>
-                            <div id="tab2"
-                                 class="div-specs-second-level-menu div-specs-second-level-menu1">
+                    <div class="div-specs-second-level-content">
 
-                            </div>
-                            <div id="tab3"
-                                 class="div-specs-second-level-menu div-specs-second-level-menu2">
-
-                            </div>-->    
-                        </div>
-                        
-                        <div class="div-specs-second-level-content">
-
-                        </div>
                     </div>
                 </div>
-                
             </div>
+
         </div>
-        
-        
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <!--<script src="https://os.alfajango.com/js/jquery-1.9.1.min.js"></script>-->
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+    </div>
 
-        <!--jQuery UI-->
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-        <!--easy tabs plugin-->
-        <!--<script src="assets/plugins/easy_tabls/jquery.easytabs.js"></script>-->
-        <script src="https://os.alfajango.com/js/jquery.easytabs.min.js"></script>
-        <!--flexslider plugin-->
-        <link rel="stylesheet" href="assets/plugins/flexslider_2.6.4/flexslider.css" type="text/css" />
-        <script src="assets/plugins/flexslider_2.6.4/jquery.flexslider.js"></script>
-        <script src="assets/plugins/flexslider_2.6.4/jquery.easing.js"></script>
-        <script src="assets/plugins/flexslider_2.6.4/jquery.mousewheel.js"></script>
-        <!--modal video plugn-->
-        <link rel="stylesheet" type="text/css" href="assets/plugins/modal_video/modal-video.min.css"/>
-        <!--<script src="assets/plugins/modal_video/js/modal-video.min.js"></script>-->
-        <script src="https://www.jqueryscript.net/demo/Youtube-Vimeo-Modal-Plugin-jQuery/js/modal-video.min.js"></script>
-    <script>
-        $(".modal-video-control-icon").hover(
-            function () {
-                $(this).attr({
-                    "src": "assets/images/modal_video/play-icon-white-freepik.svg"
-                });
-                $(this).animate(
-                    {
-                        //top: "-=5px",
-                        //left: "-=5px",
-                        height: "+=10px",
-                        width: "+=10px"
-            }
-                );
-            },
-            function () {
-                $(this).attr({
-                    "src": "assets/images/modal_video/play-icon-black-freepik.svg"
-                });
-                $(this).animate(
-                    {
-                        //top: "+=5px",
-                        //left: "+=5px",
-                        height: "-=10px",
-                        width: "-=10px"
-                    }
-                );
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/scripts/jquery.min.js"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!--smooth scroll plugin-->
+    <script src="assets/scripts/jquery-smooth-scroll.js" type="text/javascript"></script>
+    <!--flexslider plugin-->
+    <link rel="stylesheet" href="assets/plugins/flexslider_2.6.4/flexslider.css" type="text/css"/>
+    <script src="assets/plugins/flexslider_2.6.4/jquery.flexslider.js"></script>
+    <script src="assets/plugins/flexslider_2.6.4/jquery.easing.js"></script>
+    <script src="assets/plugins/flexslider_2.6.4/jquery.mousewheel.js"></script>
+    <!--modal video plugn-->
+    <!--<script src="assets/plugins/modal_video/js/modal-video.min.js"></script>-->
+    <script src="https://www.jqueryscript.net/demo/Youtube-Vimeo-Modal-Plugin-jQuery/js/modal-video.min.js"></script>
+
+    <!--colour picker-->
+    <script src="assets/scripts/colour-picker.js"></script>
+    <!--modal video-->
+    <script src="assets/scripts/modal-video.js"></script>
+    <!--feataures interactive image-->
+    <script src="assets/scripts/features-interactive-image.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        $(window).load(function() {
+
+            $('.flexslider').flexslider({
+                slideshow: false
             });
-        $(".js-video-btn").modalVideo();
-        $(".js-video-btn").click(function() {
-            console.log("clicked!");
-        })
+            // set the active colour picker image and control
+            $('.div-colour-picker-image img[data-image = crystal-black-silica]').addClass('active');
+            $(".colour-picker-control-inner[data-image = crystal-black-silica]")
+                .parent()
+                .find('.colour-picker-control')
+                .addClass('active colour-picker-control-active');
+
+            // bounce the modal video play icon
+            //https: //www.tutorialspoint.com/jquery/effect-bounce.htm
+            $(".modal-video-control-icon").effect("bounce", { times: 3 }, "slow");
+
+
+        });
+
+    </script>
+    <!--smooth scroll-->
+    <script type="text/javascript">
+
+        $('.div-navbar-link').click(function(event) {
+            event.preventDefault();
+            $.smoothScroll({
+                scrollTarget: "#" + event.target.innerText.toLowerCase(),
+                speed: 2000
+            });
+            event.stopPropagation();
+
+            return false;
+        });
+
     </script>
 
-        <script type="text/javascript" charset="utf-8">
 
-            $(window).load(function() {
-
-                $('.flexslider').flexslider({
-                    slideshow: false
-                });
-                // set the active colour picker image and control
-                $('.div-colour-picker-image img[data-image = crystal-black-silica]').addClass('active');
-                $(".colour-picker-control-inner[data-image = crystal-black-silica]")
-                    .parent()
-                    .find('.colour-picker-control')
-                    .addClass('active colour-picker-control-active');
-
-                // bounce the modal video play icon
-                //https: //www.tutorialspoint.com/jquery/effect-bounce.htm
-                $(".modal-video-control-icon").effect("bounce", {times: 3}, "slow");
-
-
-            });
-
-        </script>
-        <script src="assets/scripts/jquery-smooth-scroll.js" type="text/javascript"></script>
-        <script type="text/javascript">
-
-
-
-            $('.div-navbar-link').click(function (event) {
-                event.preventDefault();
-                //var scrollTarget = event.target.hash;
-                var theElement = $(this);
-                var scrollTarget = "#" + event.target.innerText.toLowerCase();
-                $.smoothScroll({
-                    scrollTarget: "#" + event.target.innerText.toLowerCase(),
-                    speed: 2000
-                });
-                event.stopPropagation();
-
-                return false;
-            });
-            $('.colour-picker-control-inner').on('click', function() {
-                var headphonesColor = $(this).attr('data-image');
- 
-                $('.active').removeClass('active colour-picker-control-active');
-                $('.div-colour-picker-image img[data-image = ' + headphonesColor + ']').addClass('active');
-                //$(this).addClass('active');
-                $(this)
-                    .parent()
-                    .find(".colour-picker-control")
-                    .addClass("colour-picker-control-active active");
-
-            });
-
-            $(".colour-picker-control-inner").hover(
-                function() {
-                    $(this)
-                        .parent()
-                        .find(".colour-picker-control")
-                        .addClass("colour-picker-control-hover");
-                },
-                function() {
-                    $(this)
-                        .parent()
-                        .find(".colour-picker-control")
-                        .removeClass("colour-picker-control-hover");
-                }
-            );
-            
-
-            $('.features-interactive-image-icon').click(function(event) {
-                // Prevent the default event.
-                event.preventDefault();
-
-                // darken the image
-                $(".features-interactive-image").fadeTo(2000, 0.2);
-                // features image
-                // https://www.bennadel.com/blog/1827-using-jquery-s-slideup-and-slidedown-methods-with-bottom-positioned-elements.htm
-
-                // hide the icons
-                $(".features-interactive-image-icon").hide();
-                // Get a reference to the container.
-                var container = $(".div-features-content");
-                // Toggle the slide based on its current
-                // visibility.
-                if (container.is(":visible")) {
-                    // Hide - slide up.
-                    container.slideUp(2000);
-                } else {
-                    // Show - slide down.
-                    container.slideDown(2000, function() {
-                        // show the deactivate button
-                        $(".features-deativate").fadeTo(1000, 0.8);                    
-                    });
-                }
-
-            });
-
-            // close the slide
-            $(".div-features-content").click(function () {
-                // hide the deactivate button
-                $(".features-deativate").hide();
-                $(this).slideUp(1000);
-                $(".features-interactive-image").fadeTo(1000, 1);
-                $(".features-interactive-image-icon").show();
-            });
-
-            // features icon visual cue
-            $(".features-interactive-image-icon").hover(
-                function() {
-                    $(this).attr({
-                        "src": "assets/images/features/information-icon-white-bruce.svg"
-                    });
-                },
-                function() {
-                    $(this).attr({
-                        "src": "assets/images/features/information-icon-green-bruce.svg"
-                    });
-                }
-            );
-
-            
-            $('#tab-container').easytabs();
-          
-        </script>
-        
-
-    </body>
+</body>
 </html>
