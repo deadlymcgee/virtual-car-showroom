@@ -79,7 +79,7 @@
                        href="#"
                        data-video-id="5Ae43PNpuHY">
                         <!--<div class="modal-video-control">-->
-                        <img src="assets/images/flexslider/play-button-black.svg"
+                        <img src="assets/images/modal_video/play-icon-black-freepik.svg"
                                 class="modal-video-control modal-video-control-icon"/>
                             <!--<div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
                         <!--</div>-->
@@ -303,7 +303,9 @@
     <script>
         $(".modal-video-control-icon").hover(
             function () {
-
+                $(this).attr({
+                    "src": "assets/images/modal_video/play-icon-white-freepik.svg"
+                });
                 $(this).animate(
                     {
                         //top: "-=5px",
@@ -312,7 +314,11 @@
                         width: "+=10px"
             }
                 );
-            }, function() {
+            },
+            function () {
+                $(this).attr({
+                    "src": "assets/images/modal_video/play-icon-black-freepik.svg"
+                });
                 $(this).animate(
                     {
                         //top: "+=5px",
