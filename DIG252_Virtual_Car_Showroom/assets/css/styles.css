@@ -35,6 +35,7 @@
     background-color: darkgrey
 }
 
+/*navbar*/
 
 #navbar-wrapper {
     position: fixed;
@@ -79,10 +80,16 @@
 }
 
 
+/*home section*/
+/*image slider*/
+
 .home-slider-image {
     height: 688px;
     width: 1355px;
 }
+
+
+/*colour picker*/
 
 .div-colour-picker-container {
     top: 15%;
@@ -185,7 +192,7 @@
     opacity: 1
 }
 
-
+/*features interactive image*/
 
 .div-features-interactive-image {
     height: 60%;
@@ -194,8 +201,7 @@
     z-index: 47
 }
 
-/*overlay div on image
-https://stackoverflow.com/questions/21395662/overlay-div-on-image*/ 
+/*overlay div on image (Farrugia, 2014)*/ 
 
 .div-features-interactive-image-container {
     height: 100%;
@@ -260,8 +266,7 @@ https://stackoverflow.com/questions/21395662/overlay-div-on-image*/
     color: white
 }
 
-/*centering absolutely positioned element 
-https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/*/ 
+/*centering absolutely positioned element (Shikkediel, 2015)*/ 
 
 .modal-video-control {
     position: absolute;
@@ -394,3 +399,6 @@ https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/
     background-color: lightsteelblue;
     float: left;
 }
+
+
+

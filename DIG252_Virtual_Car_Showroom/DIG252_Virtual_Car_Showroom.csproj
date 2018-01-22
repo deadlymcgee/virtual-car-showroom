@@ -88,6 +88,7 @@
     <Content Include="assets\plugins\flexslider_2.6.4\fonts\flexslider-icon.ttf" />
     <Content Include="assets\plugins\flexslider_2.6.4\fonts\flexslider-icon.woff" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\dig252virtualcarshowroom - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
