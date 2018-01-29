@@ -107,6 +107,7 @@
     <Content Include="assets\plugins\modal_video\modal-video.min.css" />
     <Content Include="assets\scripts\colour-picker.js" />
     <Content Include="assets\scripts\features-interactive-image.js" />
+    <Content Include="assets\scripts\specifications.js" />
     <Content Include="assets\scripts\jquery-smooth-scroll.js" />
     <Content Include="assets\scripts\jquery.min.js" />
     <Content Include="assets\scripts\modal-video.js" />

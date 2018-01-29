@@ -17,7 +17,7 @@
     <div class="div-scroll-me">
         <!--Navbar-->
         <div id="navbar-wrapper">
-            <div id="navbar">
+            <nav id="navbar">
                 <div class="div-navbar-link-logo-container">
                     <a href="#home">
                         <div class="div-navbar-link element-absolute-centered">
@@ -56,11 +56,11 @@
                     </a>
 
                 </div>
-            </div>
+            </nav>
         </div>
         <!--End Navbar-->
         <!--Home Section-->
-        <div id="section1"
+        <section id="section1"
              class="div-section-container div-section-background-1">
             <a id="home"></a>
             <div class="flexslider">
@@ -89,10 +89,10 @@
                 </a>
             </div>
 
-        </div>
+        </section>
         <!--End Home Section-->
         <!--Colour Section-->
-        <div id="section2"
+        <section id="section2"
              class="div-section-container div-section-background-2">
             <a id="colour"></a>
             <div class="div-colour-picker-container">
@@ -169,10 +169,10 @@
                 </div>
             </div>
 
-        </div>
+        </section>
         <!--End Colour Section-->
         <!--Features Section-->
-        <div id="section3"
+        <section id="section3"
              class="div-section-container div-section-background-1">
             <a id="features"></a>
             <div id="features-interactive"
@@ -211,16 +211,22 @@
                 </div>
 
             </div>
-        </div>
+        </section>
         <!--End Features Section-->
         <!--Specs Section-->
-        <div id="section4"
-         class="div-section-container div-section-background-2">
+        <section id="section4"
+         class="div-section-container div-section-background-2 div-section4-normal">
         <a id="specs"></a>
-        <div id="tab-container"
-             class="div-specs-container">
+            <!--<div id="tab-container"
+                 class="div-specs-container">-->
+            <div class="div-specs-header">
+                
+            </div>
+            <div class="div-specs-keyfeatures-container">
+                
+            </div>
             <div class="div-specs-top-level-menu">
-                <ul>
+                <!--<ul>
                     <li>
                         <a href="#tab1">
                             <div class="div-specs-top-level-menu-button1">
@@ -250,7 +256,7 @@
                 </div>
                 <div class="div-specs-top-level-menu-button5">
 
-                </div>
+                </div>-->
                 <!--<div class="div-specs-top-level-menu-button">
 
                 </div>
@@ -270,15 +276,15 @@
             <div class="div-specs-content-container">
                 <div class="div-specs-second-level-menu-container">
                     <!--<div id="tab1"
-                             class="div-specs-second-level-menu div-specs-second-level-menu3">
+                                class="div-specs-second-level-menu div-specs-second-level-menu3">
 
                     </div>
                     <div id="tab2"
-                         class="div-specs-second-level-menu div-specs-second-level-menu1">
+                            class="div-specs-second-level-menu div-specs-second-level-menu1">
 
                     </div>
                     <div id="tab3"
-                         class="div-specs-second-level-menu div-specs-second-level-menu2">
+                            class="div-specs-second-level-menu div-specs-second-level-menu2">
 
                     </div>-->
                 </div>
@@ -287,9 +293,12 @@
 
                 </div>
             </div>
-        </div>
+            <!--</div>-->
+            <div>
+                another element after the specs
+            </div>
 
-    </div>
+    </section>
     <!--End Specs Section-->
     <!--Footer-->
     <footer>
@@ -325,6 +334,8 @@
     <script src="assets/scripts/modal-video.js"></script>
     <!--features interactive image-->
     <script src="assets/scripts/features-interactive-image.js"></script>
+    <!--specifications interaction-->
+    <script src="assets/scripts/specifications.js"></script>
     <script>
 
         $(window).load(function() {

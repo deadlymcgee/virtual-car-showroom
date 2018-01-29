@@ -27,6 +27,24 @@
     z-index: 46
 }
 
+/*#section1 {
+    height: 100vh !important
+}*/
+
+#section4 {
+    /*height: 150vh !important*/
+    /*min-height: 100vh;
+    height: auto !important*/
+}
+
+.div-section4-normal {
+    height: 688px !important
+}
+
+/*.div-section4-extended {
+    height: 
+}*/
+
 .div-section-background-1 {
     background-color: grey
 }
@@ -299,15 +317,29 @@
 
 }
 
+.div-specs-header {
+    /*height: 10%;*/
+    height: 68px;
+    width: 100%
+}
+
+.div-specs-keyfeatures-container {
+    /*height: 30%;*/
+    height: 400px;
+    width: 100%
+}
+
 .div-specs-top-level-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /*display: grid;*/
+    margin: 0 auto;
+    /*top: 10%;*/
+    /*grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-gap: 1rem;
-    position: relative;
-    /*top: 5%;*/
-    height: 10%;
-    width: 100%;
+    grid-gap: 1rem;*/
+    /*position: relative;*/
+    /*height: 10%;*/
+    height: 100px;
+    width: 75%;
     background-color: lightblue
 
 }
@@ -353,9 +385,16 @@
 }
 
 .div-specs-content-container {
-    height: 90%;
-    width: 100%;
+    display: none;
+    margin: 0 auto;
+    /*height: 70%;*/
+    height: 485px;
+    width: 75%;
     background-color: lightcyan
+}
+
+.div-specs-content-container * {
+    display: none
 }
 
 .div-specs-second-level-menu-container {
