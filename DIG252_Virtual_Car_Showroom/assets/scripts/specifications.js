@@ -21,6 +21,7 @@ $(".div-specs-top-level-menu-button-container").click(function () {
 
 
     var selected = $(this).attr("id");
+    $('div[class*="specs-sub-menu-category"].active').removeClass("active");
     $(".div-" + selected).addClass("active");
 
 

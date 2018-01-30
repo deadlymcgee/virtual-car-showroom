@@ -455,6 +455,10 @@ div[class*= "specs-sub-menu-category"] {
     background-color: red
 }
 
+.div-specs-sub-menu-category2 {
+    background-color: black
+}
+
 div[class*= "specs-sub-menu-category"].active {
     display: block
 }
