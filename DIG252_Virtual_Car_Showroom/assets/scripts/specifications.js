@@ -22,9 +22,12 @@ $(".div-specs-top-level-menu-button-container").click(function () {
 
     var selected = $(this).attr("id");
     $('div[class*="specs-sub-menu-category"].active').removeClass("active");
-    $(".div-" + selected).addClass("active");
-
-
+    // show all elements matching the target category
+    $('div[class*="specs-sub-menu-category"]')
+        .filter(function() {
+            return $(this).attr("class").indexOf(selected) > -1;
+        })
+        .addClass("active");
 });
 
 $(".div-specs-content-close").click(function() {
