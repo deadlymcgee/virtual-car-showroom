@@ -487,5 +487,28 @@ div[class*= "specs-sub-menu-category"].active {
     float: left;
 }
 
+.div-specs-content-item {
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+/*div[class*=specs-content-category] {
+    display: none;
+    width: 100%;
+    height: 100%
+}*/
+
+div[class*=specs-content-category].active {
+    display: block
+}
+
+.div-specs-content-category1-item1 {
+    background-color: blue
+}
+
+.div-specs-content-category1-item2 {
+    background-color: orange
+}
 
 
