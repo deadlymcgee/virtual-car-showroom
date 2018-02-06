@@ -1,5 +1,5 @@
 ﻿
-
+persistedContentItems = {};
 
 
 
@@ -19,16 +19,44 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         }, 1000);
         //(Steve, 2011)
     }
-
-
     var selected = $(this).attr("id");
-    $('div[class*="specs-sub-menu-category"].active').removeClass("active");
-    // show all elements matching the target category
-    $('div[class*="specs-sub-menu-category"]')
+
+    // dont take any more action if the target sub menu is already visible
+    var targetSubMenu = $('div[class*="specs-sub-menu-category"]')
         .filter(function() {
             return $(this).attr("class").indexOf(selected) > -1;
-        })
-        .addClass("active");
+        });
+
+    var targetSubMenuItem = targetSubMenu[0];
+    var subMenuButtonCssDisplayValue = $(targetSubMenuItem).css("display");
+
+    if (subMenuButtonCssDisplayValue === "none") {
+        // show the associated sub menu
+        // hide the currently active (visible) sub menu
+        $('div[class*="specs-sub-menu-category"].active').removeClass("active");
+        // hide the currently active content item
+        // save the visible content item to set as default for this category
+        // set the default to 'item1' if there isnt an item saved
+
+
+
+        $('div[class*="specs-content"].active').removeClass("active");
+        // show all sub menu elements matching the target category
+        $('div[class*="specs-sub-menu-category"]')
+            .filter(function () {
+                return $(this).attr("class").indexOf(selected) > -1;
+            })
+            .addClass("active");
+        // set the default target category content item
+        $('div[class*="specs-content-category"]')
+            .filter(function () {
+                var defaultItem = selected.split("-").pop() + "-item1";
+                return $(this).attr("class").indexOf(defaultItem) > -1;
+            })
+            .addClass("active");
+    }
+
+    
 });
 
 $(".div-specs-sub-menu-category-button").click(function() {
