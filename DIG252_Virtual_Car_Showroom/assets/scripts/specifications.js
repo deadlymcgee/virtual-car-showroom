@@ -35,25 +35,32 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         // hide the currently active (visible) sub menu
         $('div[class*="specs-sub-menu-category"].active').removeClass("active");
         // hide the currently active content item
-        // save the visible content item to set as default for this category
-        // set the default to 'item1' if there isnt an item saved
-
-
-
-        $('div[class*="specs-content"].active').removeClass("active");
+        var activeContentItem = $('div[class*="specs-content"].active');
+        $(activeContentItem).removeClass("active");
         // show all sub menu elements matching the target category
         $('div[class*="specs-sub-menu-category"]')
             .filter(function () {
                 return $(this).attr("class").indexOf(selected) > -1;
             })
             .addClass("active");
-        // set the default target category content item
-        $('div[class*="specs-content-category"]')
-            .filter(function () {
-                var defaultItem = selected.split("-").pop() + "-item1";
-                return $(this).attr("class").indexOf(defaultItem) > -1;
-            })
-            .addClass("active");
+        // set the default to 'item1' if there isnt an item saved
+        var persistedCategoryItem = persistedContentItems[selected];
+        if (persistedCategoryItem === undefined) {
+            // set the default target category content item
+            $('div[class*="specs-content-category"]')
+                .filter(function () {
+                    var defaultItem = selected.split("-").pop() + "-item1";
+                    return $(this).attr("class").indexOf(defaultItem) > -1;
+                })
+                .addClass("active");
+            // save the visible (active) content item to set as default for this category
+        } else {
+            $(persistedCategoryItem).addClass("active");
+        }
+
+
+
+
     }
 
     
@@ -61,14 +68,23 @@ $(".div-specs-top-level-menu-button-container").click(function () {
 
 $(".div-specs-sub-menu-category-button").click(function() {
     var selected = $(this).attr("id");
+    var category = $('div[class*="top-level-menu-button"]')
+        .filter(function() {
+            var category = selected.split("-")[2];
+            console.log(this);
+            return this.id.indexOf(category) > -1;
+        }); 
+
     $('div[class*="specs-content-category"].active').removeClass("active");
-    $('div[class*="specs-content-category"]')
-        .filter(function () {
+    var currentContentItem = $('div[class*="specs-content-category"]')
+        .filter(function() {
             return $(this).attr("class").indexOf(selected) > -1;
         })
         .addClass("active");
-    
-})
+    persistedContentItems[category.attr("id")] = currentContentItem;
+
+
+});
 
 $(".div-specs-content-close").click(function() {
     if ($(".div-specs-content-container").is(":visible")) {
