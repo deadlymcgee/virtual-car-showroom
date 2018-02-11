@@ -34,8 +34,9 @@ $(".div-features-content").click(function () {
     // hide the deactivate button
     $(".features-deativate").hide();
     $(this).slideUp(1000);
-    $(".features-interactive-image").fadeTo(1000, 1);
-    $(".features-interactive-image-icon").show();
+    $(".features-interactive-image").fadeTo(1000, 1, function() {
+        $(".features-interactive-image-icon").show();
+    });
 });
 
 // features icon visual cue
