@@ -89,7 +89,8 @@
     width: 80%;
     height: 60%;
     text-align: center;
-    z-index: 101
+    z-index: 101;
+    display: none
 }
 
 .navbar-text {
@@ -259,7 +260,7 @@
     border: solid 3px black;
 }
 
-/*center text vertically
+/*center text vertically using 'line-height'
 (w3schools.com)
 (Coyier, 2009)*/
 
