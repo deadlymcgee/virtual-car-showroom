@@ -1,6 +1,7 @@
 ﻿body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif
 
 }
 
@@ -109,6 +110,18 @@
 
 /*colour picker*/
 
+.div-colour-picker-heading {
+    margin: 0 auto;
+    top: 15%;
+    position: relative;
+    width: 40%;
+    z-index: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
 .div-colour-picker-container {
     top: 15%;
     width: 75%;
@@ -119,16 +132,18 @@
 }
 
 .div-colour-picker-image {
+    top: 15%;
     position: relative;
     width: 100%;
-    height: 80%;
+    height: 320px;
     /*background-color: white*/
 }
 
 .div-colour-picker-controls-container {
     position: relative;
+    top: 12%;
     width: 100%;
-    height: 20%;
+    height: 85px;
 
 }
 
@@ -204,15 +219,6 @@
     opacity: 0;
     transition: all 0.5s ease
 
-}
-
-.colour-picker-heading {
-    margin: 0 auto;
-    top: 20%;
-    position: relative;
-    width: 40%;
-    z-index: 1;
-    text-align: center
 }
 
 .colour-picker-image.active {
