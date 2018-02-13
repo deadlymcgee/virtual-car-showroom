@@ -206,6 +206,15 @@
 
 }
 
+.colour-picker-heading {
+    margin: 0 auto;
+    top: 20%;
+    position: relative;
+    width: 40%;
+    z-index: 1;
+    text-align: center
+}
+
 .colour-picker-image.active {
     opacity: 1
 }
