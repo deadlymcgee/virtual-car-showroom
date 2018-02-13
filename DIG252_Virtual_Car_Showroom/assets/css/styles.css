@@ -101,6 +101,28 @@
 
 
 /*home section*/
+
+.div-home-hero-text {
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    z-index: 60;
+    height: 200px;
+    width: 600px;
+    /*background-color: orange*/
+}
+
+.home-hero-text {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.6;
+    color: white
+}
+
+.home-hero-text-right {
+    text-align: right
+}
+
 /*image slider*/
 
 .home-slider-image {
@@ -108,6 +130,27 @@
     width: 1355px;
 }
 
+/*modal video*/
+
+.modal-video-control {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    /*border-radius: 50%;*/
+    /*background-color: black;*/
+    z-index: 60
+}
+/*centering absolutely positioned element (Shikkediel, 2015)*/
+
+.modal-video-control-icon {
+    height: 100px;
+    width: 100px;
+    opacity: 0.5
+}
 
 /*colour picker*/
 
@@ -337,27 +380,6 @@
 
 .features-content-text {
     color: white
-}
-
-/*centering absolutely positioned element (Shikkediel, 2015)*/ 
-
-.modal-video-control {
-    position: absolute;
-    top: 500px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 100px;
-    width: 100px;
-    /*border-radius: 50%;*/
-    /*background-color: black;*/
-    z-index: 60
-}
-
-.modal-video-control-icon {
-    height: 100px;
-    width: 100px;
-    opacity: 0.5
 }
 
 
