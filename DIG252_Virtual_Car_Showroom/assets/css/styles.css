@@ -225,6 +225,45 @@
     opacity: 1
 }
 
+.div-colour-button-container {
+    position: relative;
+    margin: 0 auto;
+    top: 17%;
+    height: 45px;
+    width: 320px
+}
+
+
+.div-colour-button {
+    position: relative;
+    text-align: center;
+}
+
+
+
+.div-colour-button-cta {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    background-color: black;
+    width: 150px;
+    color: white
+
+}
+
+.div-colour-button-specs {
+    float: right;
+    height: 39px;
+    line-height: 39px;
+    width: 144px;
+    border: solid 3px black;
+}
+
+/*center text vertically
+(w3schools.com)
+(Coyier, 2009)*/
+
+
 /*features interactive image*/
 
 .div-features-interactive-image {
