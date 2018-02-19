@@ -548,7 +548,19 @@ div[class*= "specs-sub-menu-category"] {
 }
 
 .div-specs-sub-menu-category2 {
+    /*background-color: black*/
+}
+
+.div-specs-sub-menu-category2-button {
     background-color: black
+}
+
+.div-specs-sub-menu-category3-button {
+    background-color: darksalmon
+}
+
+.div-specs-sub-menu-category4-button {
+    background-color: lightslategrey
 }
 
 div[class*= "specs-sub-menu-category"].active {
@@ -617,6 +629,30 @@ div[class*=specs-content-category].active {
 
 .div-specs-content-category1-item2 {
     background-color: orange
+}
+
+.div-specs-content-category2-item1 {
+    background-color: green
+}
+
+.div-specs-content-category2-item2 {
+    background-color: yellow
+}
+
+.div-specs-content-category3-item1 {
+    background-color: darkgoldenrod
+}
+
+.div-specs-content-category3-item2 {
+    background-color: goldenrod
+}
+
+.div-specs-content-category4-item1 {
+    background-color: aliceblue
+}
+
+.div-specs-content-category4-item2 {
+    background-color: plum
 }
 
 .text-vertically-and-horizontally-centered.active {
