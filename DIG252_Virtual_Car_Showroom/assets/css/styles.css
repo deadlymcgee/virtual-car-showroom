@@ -54,6 +54,16 @@
     background-color: darkgrey
 }
 
+.div-section-heading {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
 /*navbar*/
 
 #navbar-wrapper {
@@ -155,15 +165,8 @@
 /*colour picker*/
 
 .div-colour-picker-heading {
-    margin: 0 auto;
     top: 15%;
-    position: relative;
     width: 40%;
-    z-index: 1;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-
 }
 
 .div-colour-picker-container {
