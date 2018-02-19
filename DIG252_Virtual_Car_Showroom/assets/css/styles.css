@@ -314,7 +314,12 @@
     height: 60%;
     width: 60%;
     background-color: black;
-    z-index: 47
+    z-index: 47;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    bottom: 10%
 }
 
 /*overlay div on image (Farrugia, 2014)*/ 
