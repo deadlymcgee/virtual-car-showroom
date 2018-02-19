@@ -38,10 +38,14 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         var activeContentItem = $('div[class*="specs-content"].active');
         $(activeContentItem).removeClass("active");
         // show all sub menu elements matching the target category
-        $('div[class*="specs-sub-menu-category"]')
-            .filter(function () {
+        var subMenuElements = $('div[class*="specs-sub-menu-category"]')
+            .filter(function() {
                 return $(this).attr("class").indexOf(selected) > -1;
-            })
+            });
+        subMenuElements.addClass("active");
+        // show all the child span elements
+        subMenuElements
+            .children("span")
             .addClass("active");
         // set the default to 'item1' if there isnt an item saved
         var persistedCategoryItem = persistedContentItems[selected];
