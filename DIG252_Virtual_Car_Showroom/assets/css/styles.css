@@ -500,6 +500,10 @@
     display: table
 }
 
+.div-specs-top-level-menu-button.hover {
+    background-color: yellow
+}
+
 .div-specs-content-container {
     display: none;
     margin: 0 auto;

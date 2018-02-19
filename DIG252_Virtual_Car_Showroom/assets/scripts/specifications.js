@@ -2,6 +2,16 @@
 persistedContentItems = {};
 
 
+//top level menu button hover effect
+$(".div-specs-top-level-menu-button")
+    .hover(function () {
+        $(this).addClass("hover");
+        },
+    function() {
+        $(this).removeClass("hover");
+    });
+
+
 
 $(".div-specs-top-level-menu-button-container").click(function () {
 
