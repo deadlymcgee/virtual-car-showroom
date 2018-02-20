@@ -85,6 +85,11 @@
     text-align: center
 }
 
+.text-vertically-and-horizontally-centered.active {
+    display: table-cell
+}
+
+
 /*navbar*/
 
 #navbar-wrapper {
@@ -504,15 +509,21 @@
     /*display: table-cell;*/
     height: 100%;
     width: 90%;
-    background-color: lightblue;
-    display: table
+    background-color: rgba(0,0,0,0.7);
+    display: table;
+    color: white
 }
 
 .div-specs-top-level-menu-button.hover {
-    background-color: lightgray
+    /*background-color: lightgray;*/
+    background-color: rgba(0,0,0,0.5);
 }
 .div-specs-top-level-menu-button.active {
-    background-color: white
+    background-color: gray;
+    color: black;
+    border: 2px solid black;
+    border-collapse: collapse
+    
 }
 
 .div-specs-content-container {
@@ -520,8 +531,8 @@
     margin: 0 auto;
     /*height: 70%;*/
     height: 485px;
-    width: 75%;
-    background-color: lightcyan
+    width: 70%;
+    /*background-color: lightcyan*/
 }
 
 .div-specs-content-container * {
@@ -531,7 +542,9 @@
 .div-specs-second-level-menu-container {
     height: 100%;
     width: 30%;
-    float: left
+    float: left;
+    padding-top: 50px;
+    box-sizing: border-box
 }
 
 .div-specs-sub-menu {
@@ -550,7 +563,7 @@ div[class*= "specs-sub-menu-category"] {
     width: 100%;
     height: 70px !important;
     margin-bottom: 10px;
-    display: table
+    display: table;
 }
 
 .div-specs-sub-menu-category-button.hover {
@@ -567,7 +580,7 @@ div[class*= "specs-sub-menu-category"] {
 }
 
 .div-specs-sub-menu-category1-button {
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .div-specs-sub-menu-category2 {
@@ -575,15 +588,15 @@ div[class*= "specs-sub-menu-category"] {
 }
 
 .div-specs-sub-menu-category2-button {
-    background-color: black
+    /*background-color: black*/
 }
 
 .div-specs-sub-menu-category3-button {
-    background-color: darksalmon
+    /*background-color: darksalmon*/
 }
 
 .div-specs-sub-menu-category4-button {
-    background-color: lightslategrey
+    /*background-color: lightslategrey*/
 }
 
 div[class*= "specs-sub-menu-category"].active {
@@ -601,29 +614,29 @@ div[class*= "specs-sub-menu-category"].active {
 }
 
 .div-specs-second-level-menu1 {
-    background-color: lightcyan;
+    /*background-color: lightcyan;*/
 }
 
 .div-specs-second-level-menu2 {
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .div-specs-second-level-menu3 {
-    background-color: green;
+    /*background-color: green;*/
 }
 
 .div-specs-second-level-menu4 {
-    background-color: black;
+    /*background-color: black;*/
 }
 
 .div-specs-second-level-menu5 {
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 
 .div-specs-second-level-content {
     height: 100%;
     width: 70%;
-    background-color: lightsteelblue;
+    /*background-color: lightsteelblue;*/
     float: left;
     box-sizing: border-box;
     padding: 50px 20px
@@ -677,11 +690,6 @@ div[class*=specs-content-category].active {
 .div-specs-content-category4-item2 {
     background-color: plum
 }
-
-.text-vertically-and-horizontally-centered.active {
-    display: table-cell
-}
-
 
 #table-specs-content-category1-item1 {
     display: table;

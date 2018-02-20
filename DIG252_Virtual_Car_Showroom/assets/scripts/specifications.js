@@ -29,7 +29,8 @@ $(".div-specs-top-level-menu-button-container").click(function () {
 
     // remove the hover effect
     $(this).children('div[class*="button"]')
-        .removeClass("hover");
+        //.removeClass("hover");
+        .css("background-color", "");
     // remove any existing active effects
     $('div[class*="div-specs-top-level-menu-button"].active')
         .removeClass("active");
