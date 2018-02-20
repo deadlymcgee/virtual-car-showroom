@@ -6,7 +6,7 @@ $('.features-interactive-image-icon').click(function (event) {
     event.preventDefault();
 
     // darken the image
-    $(".features-interactive-image").fadeTo(2000, 0.2);
+    $(".features-interactive-image").fadeTo(800, 0.2);
     // features image
     // https://www.bennadel.com/blog/1827-using-jquery-s-slideup-and-slidedown-methods-with-bottom-positioned-elements.htm
 
@@ -18,10 +18,10 @@ $('.features-interactive-image-icon').click(function (event) {
     // visibility.
     if (container.is(":visible")) {
         // Hide - slide up.
-        container.slideUp(2000);
+        container.slideUp(800);
     } else {
         // Show - slide down.
-        container.slideDown(2000, function () {
+        container.slideDown(800, function () {
             // show the deactivate button
             $(".features-deativate").fadeTo(1000, 0.8);
         });
@@ -33,8 +33,8 @@ $('.features-interactive-image-icon').click(function (event) {
 $(".div-features-content").click(function () {
     // hide the deactivate button
     $(".features-deativate").hide();
-    $(this).slideUp(1000);
-    $(".features-interactive-image").fadeTo(1000, 1, function() {
+    $(this).slideUp(500);
+    $(".features-interactive-image").fadeTo(500, 1, function() {
         $(".features-interactive-image-icon").show();
     });
 });
