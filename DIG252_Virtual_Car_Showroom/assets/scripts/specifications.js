@@ -50,12 +50,13 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         $('html, body').animate({
             scrollTop: $(".div-specs-top-level-menu").offset().top - 70
         }, 1000,
+        //(Steve, 2011)
             function() {
                 $(".specs-content-close").show();
             }
         );
-        //(Steve, 2011)
     }
+
     var selected = $(this).attr("id");
 
     // dont take any more action if the target sub menu is already visible

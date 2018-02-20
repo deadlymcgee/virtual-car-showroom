@@ -83,6 +83,7 @@
     <Content Include="assets\images\flexslider\play-button-white.svg" />
     <Content Include="assets\images\modal_video\play-icon-black-freepik.svg" />
     <Content Include="assets\images\modal_video\play-icon-white-freepik.svg" />
+    <Content Include="assets\images\specs\specs.jpg" />
     <Content Include="assets\plugins\easy_tabls\jquery.easytabs.js" />
     <Content Include="assets\plugins\easy_tabls\jquery.easytabs.min.js" />
     <Content Include="assets\plugins\flexslider_2.6.4\fonts\flexslider-icon.ttf" />

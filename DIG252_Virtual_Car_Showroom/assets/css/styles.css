@@ -430,7 +430,7 @@
 
 .div-specs-keyfeatures-container {
     /*height: 30%;*/
-    height: 400px;
+    height: 550px;
     width: 100%
 }
 
@@ -681,6 +681,16 @@ div[class*=specs-content-category].active {
     table-layout: fixed;
     width: 100%
 }
+
+#table-specs-keyfeatures {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: left
+}
 .row {
     display: table-row;
 }
@@ -692,4 +702,17 @@ div[class*=specs-content-category].active {
 }
 .col1 {
     width: 40%
+}
+
+.col-keyfeatures {
+    width: 60%
+}
+
+.div-specs-heading {
+    top: 10%;
+    width: 50%
+}
+
+.specs-background-image {
+    
 }
