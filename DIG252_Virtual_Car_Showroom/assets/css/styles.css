@@ -481,14 +481,15 @@
     height: 100%
 }
 
-.div-specs-content-close {
+.specs-content-close {
     position: relative;
     top: 0;
     left: 0;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
+    display: none
 
-    background-color: black
+    /*background-color: black*/
 
 }
 
