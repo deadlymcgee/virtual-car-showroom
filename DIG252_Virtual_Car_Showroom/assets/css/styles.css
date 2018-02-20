@@ -57,6 +57,12 @@
 .section-heading {
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 20px
+}
+
+.section-sub-heading {
+    font-size: 1.2rem;
+    font-weight: bold
 }
 
 .div-section-text {
@@ -431,7 +437,8 @@
 .div-specs-keyfeatures-container {
     /*height: 30%;*/
     height: 550px;
-    width: 100%
+    width: 100%;
+    position: relative
 }
 
 .div-specs-top-level-menu-container {
@@ -697,6 +704,7 @@ div[class*=specs-content-category].active {
 .cell {
     display: table-cell;
     padding: 10px 0;
+    font-size: 0.75rem;
     border-bottom: 1px black dashed
     /*width: 50%*/
 }
@@ -712,6 +720,18 @@ div[class*=specs-content-category].active {
     top: 10%;
     width: 50%
 }
+
+.div-specs-full-heading {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+}
+
 
 .specs-background-image {
     

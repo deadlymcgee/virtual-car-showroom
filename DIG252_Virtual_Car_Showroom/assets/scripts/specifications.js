@@ -48,7 +48,7 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         //$(".div-specs-sub-menu").show();
         //scroll up so the interaction is fully visible
         $('html, body').animate({
-            scrollTop: $(".div-specs-top-level-menu").offset().top - 70
+            scrollTop: $(".div-specs-top-level-menu").offset().top - 95
         }, 1000,
         //(Steve, 2011)
             function() {
