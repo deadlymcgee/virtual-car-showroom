@@ -5,15 +5,38 @@ persistedContentItems = {};
 //top level menu button hover effect
 $(".div-specs-top-level-menu-button")
     .hover(function () {
-        $(this).addClass("hover");
+        // do not apply if the button is active
+        if ($(this).hasClass("active")) {
+            return;
+        } else {
+            $(this).addClass("hover");
+        }
         },
     function() {
         $(this).removeClass("hover");
     });
 
-
+//sub-menu button hover effect
+$(".div-specs-sub-menu-category-button")
+    .hover(function () {
+            $(this).addClass("hover");
+        },
+        function () {
+            $(this).removeClass("hover");
+        });
 
 $(".div-specs-top-level-menu-button-container").click(function () {
+
+    // remove the hover effect
+    $(this).children('div[class*="button"]')
+        .removeClass("hover");
+    // remove any existing active effects
+    $('div[class*="div-specs-top-level-menu-button"].active')
+        .removeClass("active");
+    // apply the active effect
+    $(this).children(".div-specs-top-level-menu-button")
+        .addClass("active");
+
 
     if ($(".div-specs-content-container").is(":hidden")) {
         console.log("hidden!");
@@ -80,7 +103,16 @@ $(".div-specs-top-level-menu-button-container").click(function () {
     
 });
 
-$(".div-specs-sub-menu-category-button").click(function() {
+$(".div-specs-sub-menu-category-button").click(function () {
+
+    // remove the hover effect
+    $(this).removeClass("hover");
+    // remove any existing active effects
+    $(".div-specs-sub-menu-category-button.active")
+        .removeClass("selected");
+    // apply the active effect
+    $(this).addClass("selected");
+
     var selected = $(this).attr("id");
     var category = $('div[class*="top-level-menu-button"]')
         .filter(function() {

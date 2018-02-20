@@ -501,7 +501,10 @@
 }
 
 .div-specs-top-level-menu-button.hover {
-    background-color: yellow
+    background-color: lightgray
+}
+.div-specs-top-level-menu-button.active {
+    background-color: white
 }
 
 .div-specs-content-container {
@@ -537,11 +540,19 @@ div[class*= "specs-sub-menu-category"] {
 
 .div-specs-sub-menu-category-button {
     width: 100%;
-    height: 100px !important;
+    height: 70px !important;
     margin-bottom: 10px;
     display: table
 }
 
+.div-specs-sub-menu-category-button.hover {
+    background-color: lightgray
+}
+
+.div-specs-sub-menu-category-button.selected {
+    background-color: white;
+    color: black
+}
 
 .div-specs-sub-menu-category1 {
     /*background-color: red*/
