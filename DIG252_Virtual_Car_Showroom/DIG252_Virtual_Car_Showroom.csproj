@@ -83,8 +83,6 @@
     <Content Include="assets\images\flexslider\play-button-white.svg" />
     <Content Include="assets\images\modal_video\play-icon-black-freepik.svg" />
     <Content Include="assets\images\modal_video\play-icon-white-freepik.svg" />
-    <Content Include="assets\plugins\easy_tabls\jquery.easytabs.js" />
-    <Content Include="assets\plugins\easy_tabls\jquery.easytabs.min.js" />
     <Content Include="assets\plugins\flexslider_2.6.4\fonts\flexslider-icon.ttf" />
     <Content Include="assets\plugins\flexslider_2.6.4\fonts\flexslider-icon.woff" />
     <None Include="packages.config" />
@@ -109,7 +107,7 @@
     <Content Include="assets\scripts\features-interactive-image.js" />
     <Content Include="assets\scripts\navbar.js" />
     <Content Include="assets\scripts\specifications.js" />
-    <Content Include="assets\scripts\jquery-smooth-scroll.js" />
+    <Content Include="assets\plugins\jquery-smooth-scroll.js" />
     <Content Include="assets\scripts\jquery.min.js" />
     <Content Include="assets\scripts\modal-video.js" />
     <Content Include="Index.html" />

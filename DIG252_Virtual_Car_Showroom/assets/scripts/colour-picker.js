@@ -6,7 +6,6 @@ $('.colour-picker-control-inner').on('click', function () {
 
     $('.active').removeClass('active colour-picker-control-active');
     $('.div-colour-picker-image img[data-image = ' + headphonesColor + ']').addClass('active');
-    //$(this).addClass('active');
     $(this)
         .parent()
         .find(".colour-picker-control")
@@ -28,3 +27,11 @@ $(".colour-picker-control-inner").hover(
             .removeClass("colour-picker-control-hover");
     }
 );
+
+// specs button navigation
+$(".div-colour-button-specs").click(function() {
+    $.smoothScroll({
+        scrollTarget: "#specs",
+        speed: 500
+    });
+})

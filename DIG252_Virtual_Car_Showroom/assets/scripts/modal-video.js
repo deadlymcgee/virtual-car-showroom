@@ -7,8 +7,6 @@ $(".modal-video-control-icon").hover(
         });
         $(this).animate(
             {
-                //top: "-=5px",
-                //left: "-=5px",
                 height: "+=10px",
                 width: "+=10px"
             }
@@ -20,8 +18,6 @@ $(".modal-video-control-icon").hover(
         });
         $(this).animate(
             {
-                //top: "+=5px",
-                //left: "+=5px",
                 height: "-=10px",
                 width: "-=10px"
             }
