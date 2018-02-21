@@ -685,34 +685,34 @@ div[class*=specs-content-category].active {
 }
 
 .div-specs-content-category1-item2 {
-    background-color: orange
+    /*background-color: orange*/
 }
 
 .div-specs-content-category2-item1 {
-    background-color: green
+    /*background-color: green*/
 }
 
 .div-specs-content-category2-item2 {
-    background-color: yellow
+    /*background-color: yellow*/
 }
 
 .div-specs-content-category3-item1 {
-    background-color: darkgoldenrod
+    /*background-color: darkgoldenrod*/
 }
 
 .div-specs-content-category3-item2 {
-    background-color: goldenrod
+    /*background-color: goldenrod*/
 }
 
 .div-specs-content-category4-item1 {
-    background-color: aliceblue
+    /*background-color: aliceblue*/
 }
 
 .div-specs-content-category4-item2 {
-    background-color: plum
+    /*background-color: plum*/
 }
 
-#table-specs-content-category1-item1 {
+.table-specs-content {
     display: table;
     table-layout: fixed;
     width: 100%
