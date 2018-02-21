@@ -680,6 +680,7 @@ div[class*=specs-content-category].active {
     display: block
 }
 
+/*div elements to associate content with sub-menu buttons*/
 .div-specs-content-category1-item1 {
     /*background-color: blue*/
 }
