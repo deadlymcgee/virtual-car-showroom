@@ -103,7 +103,15 @@
 #navbar {
     position: relative;
     height: 100%;
+    /*background-color: black*/
+}
+
+.navbar-opaque {
     background-color: black
+}
+
+.navbar-transparent {
+    background-color: rgba(0,0,0,0.2)
 }
 
 
