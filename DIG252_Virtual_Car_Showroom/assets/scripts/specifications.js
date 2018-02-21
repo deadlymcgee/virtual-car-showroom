@@ -40,7 +40,6 @@ $(".div-specs-top-level-menu-button-container").click(function () {
 
 
     if ($(".div-specs-content-container").is(":hidden")) {
-        console.log("hidden!");
         $("#section4").removeClass("div-section4-normal");
         $("#section4").css("height", "+=485");
         $(".div-specs-content-container").show();
@@ -49,7 +48,7 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         //$(".div-specs-sub-menu").show();
         //scroll up so the interaction is fully visible
         $('html, body').animate({
-            scrollTop: $(".div-specs-top-level-menu").offset().top - 95
+            scrollTop: $(".div-specs-top-level-menu").offset().top - 125
         }, 1000,
         //(Steve, 2011)
             function() {
@@ -90,18 +89,28 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         var persistedCategoryItem = persistedContentItems[selected];
         if (persistedCategoryItem === undefined) {
             // set the default target category content item
-            $('div[class*="specs-content-category"]')
-                .filter(function () {
+            activeContentItem = $('div[class*="specs-content-category"]')
+                .filter(function() {
                     var defaultItem = selected.split("-").pop() + "-item1";
                     return $(this).attr("class").indexOf(defaultItem) > -1;
-                })
-                .addClass("active");
-            // save the visible (active) content item to set as default for this category
+                });
+            //.addClass("active");
         } else {
-            $(persistedCategoryItem).addClass("active");
+            //$(persistedCategoryItem).addClass("active");
+            activeContentItem = persistedCategoryItem;
         }
-
-
+        $(activeContentItem).addClass("active");
+        // set the associated button active
+        $('div[class*="sub-menu-category-button"]')
+            .filter(function() {
+                var targets = activeContentItem[0]
+                    .classList[0]
+                    .split("-")
+                    .slice(3);
+                var target = targets[0] + "-" + targets[1];
+                return $(this).attr("id").indexOf(target) > -1;
+            })
+            .addClass("selected");
 
 
     }
@@ -114,7 +123,7 @@ $(".div-specs-sub-menu-category-button").click(function () {
     // remove the hover effect
     $(this).removeClass("hover");
     // remove any existing active effects
-    $(".div-specs-sub-menu-category-button.active")
+    $(".div-specs-sub-menu-category-button.selected")
         .removeClass("selected");
     // apply the active effect
     $(this).addClass("selected");
@@ -133,6 +142,7 @@ $(".div-specs-sub-menu-category-button").click(function () {
             return $(this).attr("class").indexOf(selected) > -1;
         })
         .addClass("active");
+    // save the visible (active) content item to set as default for this category
     persistedContentItems[category.attr("id")] = currentContentItem;
 
 
