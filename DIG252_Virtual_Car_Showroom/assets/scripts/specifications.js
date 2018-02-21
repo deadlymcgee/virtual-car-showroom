@@ -45,7 +45,6 @@ $(".div-specs-top-level-menu-button-container").click(function () {
         $(".div-specs-content-container").show();
         $(".div-specs-second-level-menu-container").show();
         $(".div-specs-second-level-content").show();
-        //$(".div-specs-sub-menu").show();
         //scroll up so the interaction is fully visible
         $('html, body').animate({
             scrollTop: $(".div-specs-top-level-menu").offset().top - 125
@@ -94,9 +93,7 @@ $(".div-specs-top-level-menu-button-container").click(function () {
                     var defaultItem = selected.split("-").pop() + "-item1";
                     return $(this).attr("class").indexOf(defaultItem) > -1;
                 });
-            //.addClass("active");
         } else {
-            //$(persistedCategoryItem).addClass("active");
             activeContentItem = persistedCategoryItem;
         }
         $(activeContentItem).addClass("active");
@@ -157,7 +154,6 @@ $(".specs-content-close").click(function() {
         $("#section4").addClass("div-section4-normal");
         $("#section4").css("height", "");
         $(".div-specs-content-container").hide();
-        //$(".div-specs-content-container *").hide();
         $.smoothScroll({
             scrollTarget: "#specs",
             speed: 1000
