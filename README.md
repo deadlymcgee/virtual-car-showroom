@@ -3,7 +3,7 @@ The Web Site was planned, designed, and executed during the course of a Universi
 <br>
 The Site was implemented in accordance with the following requirements:<br>
 <br>
-	• **Target resolution of 1366 x 786**<br>
+	• **Target resolution of 1366 x 768**<br>
 	• Using code generators, website building tools, CSS libraries e.g. Bootstrap was not permitted<br>
 	• Use of 3rd party Javascript/JQuery plug-ins was permitted <br>
 <br>
